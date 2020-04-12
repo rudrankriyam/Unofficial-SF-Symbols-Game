@@ -5,6 +5,7 @@
 //  Created by Rudrank Riyam on 12/04/20.
 //  Copyright © 2020 Rudrank Riyam. All rights reserved.
 //
+// This file is taken from SF Symbols Viewer by Kenta Kubo [https://github.com/kkk669/SF-Symbols-Viewer]
 
 import Foundation
 

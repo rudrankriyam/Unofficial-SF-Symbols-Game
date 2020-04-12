@@ -19,7 +19,7 @@ struct SymbolRow: View {
             Text(symbolName)
                 .kerning(1)
         }
-    .padding()
+        .customBackground()
     }
 }
 

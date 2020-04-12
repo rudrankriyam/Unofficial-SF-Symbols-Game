@@ -9,6 +9,11 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    init() {
+        UITableView.appearance().separatorColor = .clear
+    }
+    
     var body: some View {
         NavigationView {
             List(Symbols.symbols, id: \.self) { symbol in
