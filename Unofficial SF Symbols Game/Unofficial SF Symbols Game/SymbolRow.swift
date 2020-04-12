@@ -13,7 +13,7 @@ struct SymbolRow: View {
 
     var body: some View {
         HStack(spacing: 10) {
-            Image(systemName: symbolName)
+            Image(systemName: "circle")
                 .font(.title)
                 .frame(minWidth: 40, alignment: .leading)
             Text(symbolName)
