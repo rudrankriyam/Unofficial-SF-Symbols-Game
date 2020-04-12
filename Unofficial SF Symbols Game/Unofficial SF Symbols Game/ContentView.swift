@@ -10,7 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            List(Symbols.symbols, id: \.self) { symbol in
+                SymbolRow(symbolName: symbol)
+                    .navigationBarTitle("SF Symbols")
+            }
+        }
     }
 }
 
