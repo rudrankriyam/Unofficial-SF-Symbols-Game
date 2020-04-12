@@ -24,7 +24,7 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 Image(systemName: symbols[correctAnswer])
-                    .font(.system(size: 200))
+                    .font(.system(size: UIScreen.main.bounds.width / 3))
                     .padding(.top, 30)
                     .accessibility(hidden: true)
                 Spacer()
@@ -44,6 +44,7 @@ struct ContentView: View {
             }
             .navigationBarTitle("SF Symbols Game")
         }
+    .navigationViewStyle(StackNavigationViewStyle())
     }
 
     func askQuestion() {
@@ -58,7 +59,6 @@ struct ContentView: View {
         } else {
             scoreTitle = "Wrong"
         }
-
         showingScore = true
     }
 }
