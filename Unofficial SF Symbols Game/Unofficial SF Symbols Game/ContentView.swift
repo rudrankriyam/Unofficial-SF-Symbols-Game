@@ -22,12 +22,12 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            VStack {
+            ScrollView {
                 Image(systemName: symbols[correctAnswer])
-                    .font(.system(size: UIScreen.main.bounds.width / 3))
+                    .font(.system(size: UIScreen.main.bounds.width / 2))
                     .padding(.top, 30)
                     .accessibility(hidden: true)
-                Spacer()
+                Spacer(minLength: 50)
                 ForEach(0..<4, id: \.self) { symbol in
                     Button(action: {
                         self.symbolTapped(symbol)
