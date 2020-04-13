@@ -25,9 +25,8 @@ struct ContentView: View {
             ScrollView {
                 Image(systemName: symbols[correctAnswer])
                     .font(.largeTitle)
-                    .padding(.top, 30)
+                    .padding(100)
                     .accessibility(hidden: true)
-                Spacer(minLength: 50)
                 ForEach(0..<4, id: \.self) { symbol in
                     Button(action: {
                         self.symbolTapped(symbol)
