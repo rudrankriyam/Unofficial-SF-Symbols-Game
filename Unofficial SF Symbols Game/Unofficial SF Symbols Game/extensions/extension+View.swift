@@ -13,7 +13,7 @@ extension View {
         self
             .padding(20)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(RoundedRectangle(cornerRadius: 16, style: .continuous).fill(Color(.secondarySystemBackground)))
+            .background(RoundedRectangle(cornerRadius: 16, style: .continuous).fill(Color.primaryColor))
             .padding([.horizontal, .bottom])
     }
 }
