@@ -24,7 +24,7 @@ struct ContentView: View {
         NavigationView {
             ScrollView {
                 Image(systemName: symbols[correctAnswer])
-                    .font(.system(size: UIScreen.main.bounds.width / 2))
+                    .font(.largeTitle)
                     .padding(.top, 30)
                     .accessibility(hidden: true)
                 Spacer(minLength: 50)
