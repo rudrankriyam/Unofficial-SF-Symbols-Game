@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AB5FD722444F18F005DBD66 /* BarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5FD712444F18F005DBD66 /* BarButtonView.swift */; };
+		0A01CD432445843100800E7D /* BarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01CD412445843100800E7D /* BarButtonView.swift */; };
+		0A01CD442445843100800E7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01CD422445843100800E7D /* ContentView.swift */; };
 		0AB5FD742444F1BF005DBD66 /* extensions+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5FD732444F1BF005DBD66 /* extensions+Color.swift */; };
 		0ACE98A224432BB1006F9A12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98A124432BB1006F9A12 /* AppDelegate.swift */; };
 		0ACE98A424432BB1006F9A12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98A324432BB1006F9A12 /* SceneDelegate.swift */; };
 		0ACE98A724432BB1006F9A12 /* Unofficial_SF_Symbols_Game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98A524432BB1006F9A12 /* Unofficial_SF_Symbols_Game.xcdatamodeld */; };
-		0ACE98A924432BB1006F9A12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98A824432BB1006F9A12 /* ContentView.swift */; };
 		0ACE98AB24432BB3006F9A12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE98AA24432BB3006F9A12 /* Assets.xcassets */; };
 		0ACE98AE24432BB3006F9A12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE98AD24432BB3006F9A12 /* Preview Assets.xcassets */; };
 		0ACE98B124432BB3006F9A12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE98AF24432BB3006F9A12 /* LaunchScreen.storyboard */; };
@@ -22,13 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0AB5FD712444F18F005DBD66 /* BarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BarButtonView.swift; path = "../../../Main View/BarButtonView.swift"; sourceTree = "<group>"; };
+		0A01CD412445843100800E7D /* BarButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonView.swift; sourceTree = "<group>"; };
+		0A01CD422445843100800E7D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AB5FD732444F1BF005DBD66 /* extensions+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extensions+Color.swift"; sourceTree = "<group>"; };
 		0ACE989E24432BB1006F9A12 /* Symbols Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Symbols Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACE98A124432BB1006F9A12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ACE98A324432BB1006F9A12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0ACE98A624432BB1006F9A12 /* Unofficial_SF_Symbols_Game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Unofficial_SF_Symbols_Game.xcdatamodel; sourceTree = "<group>"; };
-		0ACE98A824432BB1006F9A12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "../../../Main View/ContentView.swift"; sourceTree = "<group>"; };
 		0ACE98AA24432BB3006F9A12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ACE98AD24432BB3006F9A12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0ACE98B024432BB3006F9A12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,8 +63,8 @@
 		0AB5FD762444F240005DBD66 /* Main View */ = {
 			isa = PBXGroup;
 			children = (
-				0ACE98A824432BB1006F9A12 /* ContentView.swift */,
-				0AB5FD712444F18F005DBD66 /* BarButtonView.swift */,
+				0A01CD412445843100800E7D /* BarButtonView.swift */,
+				0A01CD422445843100800E7D /* ContentView.swift */,
 			);
 			path = "Main View";
 			sourceTree = "<group>";
@@ -207,11 +207,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ACE98B924432DC6006F9A12 /* Symbols.swift in Sources */,
+				0A01CD442445843100800E7D /* ContentView.swift in Sources */,
 				0ACE98A224432BB1006F9A12 /* AppDelegate.swift in Sources */,
-				0AB5FD722444F18F005DBD66 /* BarButtonView.swift in Sources */,
 				0ACE98A724432BB1006F9A12 /* Unofficial_SF_Symbols_Game.xcdatamodeld in Sources */,
+				0A01CD432445843100800E7D /* BarButtonView.swift in Sources */,
 				0AB5FD742444F1BF005DBD66 /* extensions+Color.swift in Sources */,
-				0ACE98A924432BB1006F9A12 /* ContentView.swift in Sources */,
 				0ACE98BE24433996006F9A12 /* extension+View.swift in Sources */,
 				0ACE98BB24432FE4006F9A12 /* SymbolRow.swift in Sources */,
 				0ACE98A424432BB1006F9A12 /* SceneDelegate.swift in Sources */,
