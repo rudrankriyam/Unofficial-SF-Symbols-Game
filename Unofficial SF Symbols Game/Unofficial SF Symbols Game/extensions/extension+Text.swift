@@ -6,4 +6,16 @@
 //  Copyright © 2020 Rudrank Riyam. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
+
+extension Text {
+    func largeTitleText(topPadding: CGFloat) -> some View {
+        self
+            .font(.largeTitle)
+            .bold()
+            .foregroundColor(.white)
+            .padding(.top, topPadding)
+            .padding(.leading)
+            .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}

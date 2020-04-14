@@ -20,7 +20,7 @@ extension View {
 
     func customImage() -> some View {
         self
-            .font(.largeTitle)
+            .font(Font.system(size: UIFontMetrics(forTextStyle: .largeTitle).scaledValue(for: 100)))
             .padding(100)
             .foregroundColor(.white)
             .accessibility(hidden: true)
