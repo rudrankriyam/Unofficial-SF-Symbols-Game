@@ -22,28 +22,34 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            ScrollView {
-                Image(systemName: symbols[correctAnswer])
-                    .font(.largeTitle)
-                    .padding(100)
-                    .accessibility(hidden: true)
-                ForEach(0..<4, id: \.self) { symbol in
-                    Button(action: {
-                        self.symbolTapped(symbol)
-                    }) {
-                        SymbolRow(symbolName: self.symbols[symbol])
-                            .foregroundColor(.primary)
-                    }
-                    .alert(isPresented: self.$showingScore) {
-                        Alert(title: Text(self.scoreTitle), message: Text("Your score is \(self.score)"), dismissButton: .default(Text("Continue")) {
-                            self.askQuestion()
-                            })
+            ZStack {
+                BackgroundView()
+                VStack {
+                    Text("SF Symbols Game")
+                        .largeTitleText(topPadding: 50)
+                    ScrollView {
+                        Image(systemName: symbols[correctAnswer])
+                            .customImage()
+                        ForEach(0..<4, id: \.self) { symbol in
+                            Button(action: {
+                                self.symbolTapped(symbol)
+                            }) {
+                                SymbolRow(symbolName: self.symbols[symbol])
+                                    .foregroundColor(.primary)
+                            }
+                            .alert(isPresented: self.$showingScore) {
+                                Alert(title: Text(self.scoreTitle), message: Text("Your score is \(self.score)"), dismissButton: .default(Text("Continue")) {
+                                    self.askQuestion()
+                                    })
+                            }
+                        }
                     }
                 }
             }
-            .navigationBarTitle("SF Symbols Game")
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
-    .navigationViewStyle(StackNavigationViewStyle())
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 
     func askQuestion() {
