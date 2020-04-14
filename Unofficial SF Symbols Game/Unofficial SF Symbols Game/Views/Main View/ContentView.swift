@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var symbols = Symbols.symbols.shuffled()
-    @State private var correctAnswer = Int.random(in: 0...2)
+    @State private var correctAnswer = Int.random(in: 0..<4)
 
     @State private var showingScore = false
     @State private var scoreTitle = ""
