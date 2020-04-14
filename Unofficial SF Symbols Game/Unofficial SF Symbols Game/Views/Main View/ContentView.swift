@@ -9,8 +9,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    private static let questionsRange = 0..<4
+
     @State private var symbols = Symbols.symbols.shuffled()
-    @State private var correctAnswer = Int.random(in: 0..<4)
+    @State private var correctAnswer = Int.random(in: Self.questionsRange)
 
     @State private var showingScore = false
     @State private var scoreTitle = ""
@@ -28,7 +30,7 @@ struct ContentView: View {
                     ScrollView {
                         Image(systemName: symbols[correctAnswer])
                             .customImage()
-                        ForEach(0..<4, id: \.self) { symbol in
+                        ForEach(Self.questionsRange, id: \.self) { symbol in
                             Button(action: {
                                 self.symbolTapped(symbol)
                             }) {
@@ -51,7 +53,7 @@ struct ContentView: View {
 
     func askQuestion() {
         symbols.shuffle()
-        correctAnswer = Int.random(in: 0...2)
+        correctAnswer = Int.random(in: Self.questionsRange)
     }
 
     func symbolTapped(_ number: Int) {
