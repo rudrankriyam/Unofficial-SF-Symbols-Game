@@ -13,7 +13,6 @@ extension Text {
         self
             .font(.largeTitle)
             .bold()
-            .foregroundColor(.white)
             .padding(.top, topPadding)
             .padding(.leading)
             .frame(maxWidth: .infinity, alignment: .leading)

@@ -22,8 +22,6 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            ZStack {
-                BackgroundView()
                 VStack {
                     Text("SF Symbols Game")
                         .largeTitleText(topPadding: 50)
@@ -44,7 +42,6 @@ struct ContentView: View {
                             }
                         }
                     }
-                }
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)

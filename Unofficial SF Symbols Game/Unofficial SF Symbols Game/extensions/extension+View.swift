@@ -7,14 +7,17 @@
 //
 
 import SwiftUI
+var leftColor = Color(red: 212/255, green: 20/255, blue: 90/255)
+var rightColor = Color(red: 251/255, green: 176/255, blue: 59/255)
 
 extension View {
     func customBackground() -> some View {
         self
             .padding(20)
-            .foregroundColor(.white)
+            .foregroundColor(.primary)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(RoundedRectangle(cornerRadius: 16, style: .continuous).fill(Color.black).opacity(0.2).blur(radius: 0.5))
+            .overlay(RoundedRectangle(cornerRadius: 16)
+                .stroke(LinearGradient(gradient: Gradient(colors: [leftColor, rightColor]), startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 2))
             .padding([.horizontal, .bottom])
     }
 
@@ -22,7 +25,6 @@ extension View {
         self
             .font(Font.system(size: UIFontMetrics(forTextStyle: .largeTitle).scaledValue(for: 100)))
             .padding(100)
-            .foregroundColor(.white)
             .accessibility(hidden: true)
     }
 }
