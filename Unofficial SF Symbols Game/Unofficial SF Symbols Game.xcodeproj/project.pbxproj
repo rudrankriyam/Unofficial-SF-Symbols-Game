@@ -22,13 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0AB5FD712444F18F005DBD66 /* BarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonView.swift; sourceTree = "<group>"; };
+		0AB5FD712444F18F005DBD66 /* BarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BarButtonView.swift; path = "../../../Main View/BarButtonView.swift"; sourceTree = "<group>"; };
 		0AB5FD732444F1BF005DBD66 /* extensions+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extensions+Color.swift"; sourceTree = "<group>"; };
 		0ACE989E24432BB1006F9A12 /* Symbols Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Symbols Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACE98A124432BB1006F9A12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ACE98A324432BB1006F9A12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0ACE98A624432BB1006F9A12 /* Unofficial_SF_Symbols_Game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Unofficial_SF_Symbols_Game.xcdatamodel; sourceTree = "<group>"; };
-		0ACE98A824432BB1006F9A12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0ACE98A824432BB1006F9A12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "../../../Main View/ContentView.swift"; sourceTree = "<group>"; };
 		0ACE98AA24432BB3006F9A12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ACE98AD24432BB3006F9A12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0ACE98B024432BB3006F9A12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +63,8 @@
 		0AB5FD762444F240005DBD66 /* Main View */ = {
 			isa = PBXGroup;
 			children = (
+				0ACE98A824432BB1006F9A12 /* ContentView.swift */,
+				0AB5FD712444F18F005DBD66 /* BarButtonView.swift */,
 			);
 			path = "Main View";
 			sourceTree = "<group>";
@@ -70,6 +72,7 @@
 		0AB5FD772444F247005DBD66 /* Game View */ = {
 			isa = PBXGroup;
 			children = (
+				0ACE98BA24432FE4006F9A12 /* SymbolRow.swift */,
 			);
 			path = "Game View";
 			sourceTree = "<group>";
@@ -105,9 +108,6 @@
 				0ACE98BC24433987006F9A12 /* extensions */,
 				0ACE98A124432BB1006F9A12 /* AppDelegate.swift */,
 				0ACE98A324432BB1006F9A12 /* SceneDelegate.swift */,
-				0ACE98A824432BB1006F9A12 /* ContentView.swift */,
-				0AB5FD712444F18F005DBD66 /* BarButtonView.swift */,
-				0ACE98BA24432FE4006F9A12 /* SymbolRow.swift */,
 				0ACE98B824432DC6006F9A12 /* Symbols.swift */,
 				0ACE98AA24432BB3006F9A12 /* Assets.xcassets */,
 				0ACE98AF24432BB3006F9A12 /* LaunchScreen.storyboard */,
