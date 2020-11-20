@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0A01CD432445843100800E7D /* BarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01CD412445843100800E7D /* BarButtonView.swift */; };
-		0A01CD442445843100800E7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01CD422445843100800E7D /* ContentView.swift */; };
-		0A01CD462445889B00800E7D /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01CD452445889B00800E7D /* BackgroundView.swift */; };
-		0A01CD482445896400800E7D /* extension+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01CD472445896400800E7D /* extension+Text.swift */; };
-		0AB5FD742444F1BF005DBD66 /* extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5FD732444F1BF005DBD66 /* extension+Color.swift */; };
+		0A01CD442445843100800E7D /* MainSymbolGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01CD422445843100800E7D /* MainSymbolGameView.swift */; };
+		0A01CD482445896400800E7D /* Extension+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01CD472445896400800E7D /* Extension+Text.swift */; };
+		0AB5FD742444F1BF005DBD66 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5FD732444F1BF005DBD66 /* Extension+Color.swift */; };
 		0ACE98A224432BB1006F9A12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98A124432BB1006F9A12 /* AppDelegate.swift */; };
 		0ACE98A424432BB1006F9A12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98A324432BB1006F9A12 /* SceneDelegate.swift */; };
 		0ACE98A724432BB1006F9A12 /* Unofficial_SF_Symbols_Game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98A524432BB1006F9A12 /* Unofficial_SF_Symbols_Game.xcdatamodeld */; };
@@ -20,15 +19,14 @@
 		0ACE98B124432BB3006F9A12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE98AF24432BB3006F9A12 /* LaunchScreen.storyboard */; };
 		0ACE98B924432DC6006F9A12 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98B824432DC6006F9A12 /* Symbols.swift */; };
 		0ACE98BB24432FE4006F9A12 /* SymbolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98BA24432FE4006F9A12 /* SymbolRow.swift */; };
-		0ACE98BE24433996006F9A12 /* extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98BD24433996006F9A12 /* extension+View.swift */; };
+		0ACE98BE24433996006F9A12 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98BD24433996006F9A12 /* Extension+View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A01CD412445843100800E7D /* BarButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonView.swift; sourceTree = "<group>"; };
-		0A01CD422445843100800E7D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0A01CD452445889B00800E7D /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
-		0A01CD472445896400800E7D /* extension+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+Text.swift"; sourceTree = "<group>"; };
-		0AB5FD732444F1BF005DBD66 /* extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+Color.swift"; sourceTree = "<group>"; };
+		0A01CD422445843100800E7D /* MainSymbolGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSymbolGameView.swift; sourceTree = "<group>"; };
+		0A01CD472445896400800E7D /* Extension+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Text.swift"; sourceTree = "<group>"; };
+		0AB5FD732444F1BF005DBD66 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		0ACE989E24432BB1006F9A12 /* Symbols Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Symbols Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACE98A124432BB1006F9A12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ACE98A324432BB1006F9A12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +37,7 @@
 		0ACE98B224432BB3006F9A12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ACE98B824432DC6006F9A12 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		0ACE98BA24432FE4006F9A12 /* SymbolRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolRow.swift; sourceTree = "<group>"; };
-		0ACE98BD24433996006F9A12 /* extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+View.swift"; sourceTree = "<group>"; };
+		0ACE98BD24433996006F9A12 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		0ACE98BF24439B19006F9A12 /* Unofficial SF Symbols Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Unofficial SF Symbols Game.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,11 +52,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A4A874525685D11000569FF /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				0ACE98AF24432BB3006F9A12 /* LaunchScreen.storyboard */,
+				0ACE98A524432BB1006F9A12 /* Unofficial_SF_Symbols_Game.xcdatamodeld */,
+				0ACE98A124432BB1006F9A12 /* AppDelegate.swift */,
+				0ACE98A324432BB1006F9A12 /* SceneDelegate.swift */,
+				0ACE98AA24432BB3006F9A12 /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		0A4A874625685D21000569FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0ACE98B824432DC6006F9A12 /* Symbols.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0AB5FD752444F23B005DBD66 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0AB5FD782444F24D005DBD66 /* Settings View */,
-				0AB5FD772444F247005DBD66 /* Game View */,
 				0AB5FD762444F240005DBD66 /* Main View */,
 			);
 			path = Views;
@@ -67,26 +83,11 @@
 		0AB5FD762444F240005DBD66 /* Main View */ = {
 			isa = PBXGroup;
 			children = (
+				0A01CD422445843100800E7D /* MainSymbolGameView.swift */,
+				0ACE98BA24432FE4006F9A12 /* SymbolRow.swift */,
 				0A01CD412445843100800E7D /* BarButtonView.swift */,
-				0A01CD422445843100800E7D /* ContentView.swift */,
 			);
 			path = "Main View";
-			sourceTree = "<group>";
-		};
-		0AB5FD772444F247005DBD66 /* Game View */ = {
-			isa = PBXGroup;
-			children = (
-				0ACE98BA24432FE4006F9A12 /* SymbolRow.swift */,
-				0A01CD452445889B00800E7D /* BackgroundView.swift */,
-			);
-			path = "Game View";
-			sourceTree = "<group>";
-		};
-		0AB5FD782444F24D005DBD66 /* Settings View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Settings View";
 			sourceTree = "<group>";
 		};
 		0ACE989524432BB1006F9A12 = {
@@ -108,16 +109,12 @@
 		0ACE98A024432BB1006F9A12 /* Unofficial SF Symbols Game */ = {
 			isa = PBXGroup;
 			children = (
-				0AB5FD752444F23B005DBD66 /* Views */,
 				0ACE98BF24439B19006F9A12 /* Unofficial SF Symbols Game.entitlements */,
-				0ACE98BC24433987006F9A12 /* extensions */,
-				0ACE98A124432BB1006F9A12 /* AppDelegate.swift */,
-				0ACE98A324432BB1006F9A12 /* SceneDelegate.swift */,
-				0ACE98B824432DC6006F9A12 /* Symbols.swift */,
-				0ACE98AA24432BB3006F9A12 /* Assets.xcassets */,
-				0ACE98AF24432BB3006F9A12 /* LaunchScreen.storyboard */,
 				0ACE98B224432BB3006F9A12 /* Info.plist */,
-				0ACE98A524432BB1006F9A12 /* Unofficial_SF_Symbols_Game.xcdatamodeld */,
+				0A4A874625685D21000569FF /* Model */,
+				0A4A874525685D11000569FF /* Support */,
+				0AB5FD752444F23B005DBD66 /* Views */,
+				0ACE98BC24433987006F9A12 /* Extensions */,
 				0ACE98AC24432BB3006F9A12 /* Preview Content */,
 			);
 			path = "Unofficial SF Symbols Game";
@@ -131,14 +128,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		0ACE98BC24433987006F9A12 /* extensions */ = {
+		0ACE98BC24433987006F9A12 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				0ACE98BD24433996006F9A12 /* extension+View.swift */,
-				0AB5FD732444F1BF005DBD66 /* extension+Color.swift */,
-				0A01CD472445896400800E7D /* extension+Text.swift */,
+				0ACE98BD24433996006F9A12 /* Extension+View.swift */,
+				0AB5FD732444F1BF005DBD66 /* Extension+Color.swift */,
+				0A01CD472445896400800E7D /* Extension+Text.swift */,
 			);
-			path = extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,7 +165,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Rudrank Riyam";
 				TargetAttributes = {
 					0ACE989D24432BB1006F9A12 = {
@@ -212,15 +209,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A01CD462445889B00800E7D /* BackgroundView.swift in Sources */,
 				0ACE98B924432DC6006F9A12 /* Symbols.swift in Sources */,
-				0A01CD442445843100800E7D /* ContentView.swift in Sources */,
+				0A01CD442445843100800E7D /* MainSymbolGameView.swift in Sources */,
 				0ACE98A224432BB1006F9A12 /* AppDelegate.swift in Sources */,
-				0A01CD482445896400800E7D /* extension+Text.swift in Sources */,
+				0A01CD482445896400800E7D /* Extension+Text.swift in Sources */,
 				0ACE98A724432BB1006F9A12 /* Unofficial_SF_Symbols_Game.xcdatamodeld in Sources */,
 				0A01CD432445843100800E7D /* BarButtonView.swift in Sources */,
-				0AB5FD742444F1BF005DBD66 /* extension+Color.swift in Sources */,
-				0ACE98BE24433996006F9A12 /* extension+View.swift in Sources */,
+				0AB5FD742444F1BF005DBD66 /* Extension+Color.swift in Sources */,
+				0ACE98BE24433996006F9A12 /* Extension+View.swift in Sources */,
 				0ACE98BB24432FE4006F9A12 /* SymbolRow.swift in Sources */,
 				0ACE98A424432BB1006F9A12 /* SceneDelegate.swift in Sources */,
 			);
@@ -266,6 +262,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -326,6 +323,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -360,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Unofficial SF Symbols Game/Unofficial SF Symbols Game.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Unofficial SF Symbols Game/Preview Content\"";
 				DEVELOPMENT_TEAM = YQZQG7N4WG;
 				ENABLE_PREVIEWS = YES;
@@ -370,7 +368,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rudrankriyam.Unofficial-SF-Symbols-Game";
 				PRODUCT_NAME = "Symbols Game";
 				SUPPORTS_MACCATALYST = YES;
@@ -385,7 +383,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Unofficial SF Symbols Game/Unofficial SF Symbols Game.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Unofficial SF Symbols Game/Preview Content\"";
 				DEVELOPMENT_TEAM = YQZQG7N4WG;
 				ENABLE_PREVIEWS = YES;
@@ -395,7 +393,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rudrankriyam.Unofficial-SF-Symbols-Game";
 				PRODUCT_NAME = "Symbols Game";
 				SUPPORTS_MACCATALYST = YES;
