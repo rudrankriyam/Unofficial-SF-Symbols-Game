@@ -27,10 +27,8 @@ class MainSymbolGameViewModel: ObservableObject {
     
     func symbolTapped(_ number: Int) {
         showingScore.toggle()
-        
         // Calling haptic feedback
         haptickFeedback.feedback.haptiFeedback()
-        
         if number == correctAnswer {
             scoreTitle = "Correct"
             score += 1
@@ -42,11 +40,9 @@ class MainSymbolGameViewModel: ObservableObject {
 
 struct MainSymbolGameView: View {
     @ObservedObject var viewModel: MainSymbolGameViewModel
-    
     var body: some View {
         VStack {
             Text("SF Symbols Game").largeTitleText(topPadding: 50)
-            
             Spacer()
             Image(systemName: viewModel.symbols[viewModel.correctAnswer]).customImage()
             Spacer()

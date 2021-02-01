@@ -10,13 +10,11 @@ import Foundation
 import  AVKit
 
 class haptickFeedback {
-    
     // Declaring class as static
     static let feedback = haptickFeedback()
-
     // Haptic Feedback method
     func haptiFeedback() {
-  let generator = UINotificationFeedbackGenerator()
-  generator.notificationOccurred(.success)
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
     }
 }
