@@ -14,20 +14,23 @@ class MainSymbolGameViewModel: ObservableObject {
     // MARK:- Published Properties
     @Published var symbols = Symbols.symbols.shuffled()
     @Published var correctAnswer = Int.random(in: numberOfOptions)
-
+    
     @Published var showingScore = false
     @Published var scoreTitle = ""
     @Published var score = 0
-
+    
     // MARK:- Methods
     func askQuestion() {
         symbols.shuffle()
         correctAnswer = Int.random(in: numberOfOptions)
     }
-
+    
     func symbolTapped(_ number: Int) {
         showingScore.toggle()
-
+        
+        // Calling haptic feedback
+        haptickFeedback.feedback.haptiFeedback()
+        
         if number == correctAnswer {
             scoreTitle = "Correct"
             score += 1
@@ -39,15 +42,15 @@ class MainSymbolGameViewModel: ObservableObject {
 
 struct MainSymbolGameView: View {
     @ObservedObject var viewModel: MainSymbolGameViewModel
-
+    
     var body: some View {
         VStack {
             Text("SF Symbols Game").largeTitleText(topPadding: 50)
-
+            
             Spacer()
             Image(systemName: viewModel.symbols[viewModel.correctAnswer]).customImage()
             Spacer()
-
+            
             ForEach(numberOfOptions, id: \.self) { symbol in
                 Button(action: {
                     viewModel.symbolTapped(symbol)

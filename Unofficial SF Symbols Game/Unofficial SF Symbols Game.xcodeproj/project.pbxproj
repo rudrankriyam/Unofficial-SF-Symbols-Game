@@ -20,6 +20,7 @@
 		0ACE98B924432DC6006F9A12 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98B824432DC6006F9A12 /* Symbols.swift */; };
 		0ACE98BB24432FE4006F9A12 /* SymbolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98BA24432FE4006F9A12 /* SymbolRow.swift */; };
 		0ACE98BE24433996006F9A12 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98BD24433996006F9A12 /* Extension+View.swift */; };
+		557AB15525C806C900CF5284 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557AB15425C806C900CF5284 /* HapticFeedback.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		0ACE98BA24432FE4006F9A12 /* SymbolRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolRow.swift; sourceTree = "<group>"; };
 		0ACE98BD24433996006F9A12 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		0ACE98BF24439B19006F9A12 /* Unofficial SF Symbols Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Unofficial SF Symbols Game.entitlements"; sourceTree = "<group>"; };
+		557AB15425C806C900CF5284 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				0ACE98BF24439B19006F9A12 /* Unofficial SF Symbols Game.entitlements */,
 				0ACE98B224432BB3006F9A12 /* Info.plist */,
+				557AB15325C806B700CF5284 /* Utilities */,
 				0A4A874625685D21000569FF /* Model */,
 				0A4A874525685D11000569FF /* Support */,
 				0AB5FD752444F23B005DBD66 /* Views */,
@@ -136,6 +139,14 @@
 				0A01CD472445896400800E7D /* Extension+Text.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		557AB15325C806B700CF5284 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				557AB15425C806C900CF5284 /* HapticFeedback.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 			files = (
 				0ACE98B924432DC6006F9A12 /* Symbols.swift in Sources */,
 				0A01CD442445843100800E7D /* MainSymbolGameView.swift in Sources */,
+				557AB15525C806C900CF5284 /* HapticFeedback.swift in Sources */,
 				0ACE98A224432BB1006F9A12 /* AppDelegate.swift in Sources */,
 				0A01CD482445896400800E7D /* Extension+Text.swift in Sources */,
 				0ACE98A724432BB1006F9A12 /* Unofficial_SF_Symbols_Game.xcdatamodeld in Sources */,
