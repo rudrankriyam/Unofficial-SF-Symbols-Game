@@ -11,6 +11,8 @@ import SwiftUI
 var numberOfOptions: Range<Int> = 0..<4
 
 class MainSymbolGameViewModel: ObservableObject {
+    //propertyForFeedback
+    @State private var response = UINotificationFeedbackGenerator()
     // MARK:- Published Properties
     @Published var symbols = Symbols.symbols.shuffled()
     @Published var correctAnswer = Int.random(in: numberOfOptions)
@@ -23,17 +25,22 @@ class MainSymbolGameViewModel: ObservableObject {
     func askQuestion() {
         symbols.shuffle()
         correctAnswer = Int.random(in: numberOfOptions)
+        //prepare the tapticEngine
+        self.response.prepare()
     }
     
     func symbolTapped(_ number: Int) {
         showingScore.toggle()
         // Calling haptic feedback
-        haptickFeedback.feedback.haptiFeedback()
+//        haptickFeedback.feedback.haptiFeedback()
         if number == correctAnswer {
+            
             scoreTitle = "Correct"
             score += 1
         } else {
             scoreTitle = "Wrong"
+            //call haptic response on error 
+            self.response.notificationOccurred(.error)
         }
     }
 }
