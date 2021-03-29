@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SFSymbolsFinder",
+        "repositoryURL": "https://github.com/abadikaka/SFSymbolsFinder.git",
+        "state": {
+          "branch": null,
+          "revision": "3efd212e0bcb7be400072b4d18297d19b5a9fa18",
+          "version": "2.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

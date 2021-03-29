@@ -1,5 +1,5 @@
 //
-//  Extension+View.swift
+//  View.swift
 //  Unofficial SF Symbols Game
 //
 //  Created by Rudrank Riyam on 12/04/20.

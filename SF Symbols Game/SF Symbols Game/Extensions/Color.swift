@@ -1,5 +1,5 @@
 //
-//  Extension+Color.swift
+//  Color.swift
 //  Unofficial SF Symbols Game
 //
 //  Created by Rudrank Riyam on 14/04/20.
