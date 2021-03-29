@@ -7,47 +7,25 @@
 //
 
 import SwiftUI
+import RRComponentsKit
 
-var numberOfOptions: Range<Int> = 0..<4
-
-class MainSymbolGameViewModel: ObservableObject {
-    // MARK:- Published Properties
-    @Published var symbols = Symbols.symbols.shuffled()
-    @Published var correctAnswer = Int.random(in: numberOfOptions)
-    
-    @Published var showingScore = false
-    @Published var scoreTitle = ""
-    @Published var score = 0
-    
-    // MARK:- Methods
-    func askQuestion() {
-        symbols.shuffle()
-        correctAnswer = Int.random(in: numberOfOptions)
-    }
-    
-    func symbolTapped(_ number: Int) {
-        showingScore.toggle()
-        // Calling haptic feedback
-        haptickFeedback.feedback.haptiFeedback()
-        if number == correctAnswer {
-            scoreTitle = "Correct"
-            score += 1
-        } else {
-            scoreTitle = "Wrong"
-        }
-    }
-}
 
 struct MainSymbolGameView: View {
-    @ObservedObject var viewModel: MainSymbolGameViewModel
+    @EnvironmentObject var viewModel: MainSymbolGameViewModel
+
     var body: some View {
         VStack {
-            Text("SF Symbols Game").largeTitleText(topPadding: 50)
+            Text("SF Symbols Game")
+                .largeTitleText()
+
             Spacer()
-            Image(systemName: viewModel.symbols[viewModel.correctAnswer]).customImage()
+
+            Image(systemName: viewModel.symbols[viewModel.correctAnswer])
+                .customImage()
+
             Spacer()
             
-            ForEach(numberOfOptions, id: \.self) { symbol in
+            ForEach(MainSymbolGameViewModel.numberOfOptions, id: \.self) { symbol in
                 Button(action: {
                     viewModel.symbolTapped(symbol)
                 }) {
@@ -66,6 +44,6 @@ struct MainSymbolGameView: View {
 
 struct MainSymbolGameView_Previews: PreviewProvider {
     static var previews: some View {
-        MainSymbolGameView(viewModel: MainSymbolGameViewModel())
+        MainSymbolGameView()
     }
 }

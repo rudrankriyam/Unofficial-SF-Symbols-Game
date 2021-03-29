@@ -2,12 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "SFSymbolsFinder",
-        "repositoryURL": "https://github.com/abadikaka/SFSymbolsFinder.git",
+        "package": "RRComponentsKit",
+        "repositoryURL": "https://github.com/rudrankriyam/RRComponentsKit.git",
         "state": {
-          "branch": null,
-          "revision": "3efd212e0bcb7be400072b4d18297d19b5a9fa18",
-          "version": "2.0.0"
+          "branch": "main",
+          "revision": "9d8278765928683a32e2e74ebe8e3e4c4e2a4f08",
+          "version": null
         }
       }
     ]

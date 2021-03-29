@@ -10,13 +10,15 @@ import UIKit
 import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+    private let mainGameViewModel = MainSymbolGameViewModel()
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
-        let mainGameViewModel = MainSymbolGameViewModel()
-        let contentView = MainSymbolGameView(viewModel: mainGameViewModel).environment(\.managedObjectContext, context)
+        let contentView = MainSymbolGameView()
+            .environmentObject(mainGameViewModel)
+            .environment(\.managedObjectContext, context)
 
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)

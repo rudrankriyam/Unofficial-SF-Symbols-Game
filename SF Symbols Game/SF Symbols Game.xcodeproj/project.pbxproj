@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		0A01CD432445843100800E7D /* BarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01CD412445843100800E7D /* BarButtonView.swift */; };
 		0A01CD442445843100800E7D /* MainSymbolGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01CD422445843100800E7D /* MainSymbolGameView.swift */; };
-		0A01CD482445896400800E7D /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01CD472445896400800E7D /* Text.swift */; };
-		0A4320E42612168B00BF1EF9 /* SFSymbolsFinder in Frameworks */ = {isa = PBXBuildFile; productRef = 0A4320E32612168B00BF1EF9 /* SFSymbolsFinder */; };
 		0AB5FD742444F1BF005DBD66 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5FD732444F1BF005DBD66 /* Color.swift */; };
+		0AC1BB5A261222260017CD43 /* MainSymbolGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC1BB59261222260017CD43 /* MainSymbolGameViewModel.swift */; };
+		0AC1BB60261223370017CD43 /* RRComponentsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0AC1BB5F261223370017CD43 /* RRComponentsKit */; };
+		0AC1BB61261223370017CD43 /* RRComponentsKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 0AC1BB5F261223370017CD43 /* RRComponentsKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0AC1BB64261225BF0017CD43 /* SFSymbolsFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC1BB63261225BF0017CD43 /* SFSymbolsFinder.swift */; };
 		0ACE98A224432BB1006F9A12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98A124432BB1006F9A12 /* AppDelegate.swift */; };
 		0ACE98A424432BB1006F9A12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98A324432BB1006F9A12 /* SceneDelegate.swift */; };
 		0ACE98A724432BB1006F9A12 /* Unofficial_SF_Symbols_Game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98A524432BB1006F9A12 /* Unofficial_SF_Symbols_Game.xcdatamodeld */; };
@@ -24,13 +26,28 @@
 		557AB15525C806C900CF5284 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557AB15425C806C900CF5284 /* HapticFeedback.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0AC1BB62261223370017CD43 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0AC1BB61261223370017CD43 /* RRComponentsKit in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0A01CD412445843100800E7D /* BarButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonView.swift; sourceTree = "<group>"; };
 		0A01CD422445843100800E7D /* MainSymbolGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSymbolGameView.swift; sourceTree = "<group>"; };
-		0A01CD472445896400800E7D /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		0AB5FD732444F1BF005DBD66 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		0AC1BB54261217D20017CD43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "SF Symbols Game/Info.plist"; sourceTree = "<group>"; };
 		0AC1BB55261217E30017CD43 /* SF Symbols Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "SF Symbols Game.entitlements"; path = "SF Symbols Game/SF Symbols Game.entitlements"; sourceTree = "<group>"; };
+		0AC1BB59261222260017CD43 /* MainSymbolGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSymbolGameViewModel.swift; sourceTree = "<group>"; };
+		0AC1BB63261225BF0017CD43 /* SFSymbolsFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsFinder.swift; sourceTree = "<group>"; };
 		0ACE989E24432BB1006F9A12 /* Symbols Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Symbols Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACE98A124432BB1006F9A12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ACE98A324432BB1006F9A12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A4320E42612168B00BF1EF9 /* SFSymbolsFinder in Frameworks */,
+				0AC1BB60261223370017CD43 /* RRComponentsKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +114,14 @@
 			path = "Main View";
 			sourceTree = "<group>";
 		};
+		0AC1BB58261222020017CD43 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AC1BB59261222260017CD43 /* MainSymbolGameViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		0ACE989524432BB1006F9A12 = {
 			isa = PBXGroup;
 			children = (
@@ -118,10 +143,11 @@
 			children = (
 				0AC1BB55261217E30017CD43 /* SF Symbols Game.entitlements */,
 				0AC1BB54261217D20017CD43 /* Info.plist */,
-				557AB15325C806B700CF5284 /* Utilities */,
+				0AB5FD752444F23B005DBD66 /* Views */,
+				0AC1BB58261222020017CD43 /* View Models */,
 				0A4A874625685D21000569FF /* Model */,
 				0A4A874525685D11000569FF /* Support */,
-				0AB5FD752444F23B005DBD66 /* Views */,
+				557AB15325C806B700CF5284 /* Utilities */,
 				0ACE98BC24433987006F9A12 /* Extensions */,
 				0ACE98AC24432BB3006F9A12 /* Preview Content */,
 			);
@@ -142,7 +168,6 @@
 			children = (
 				0ACE98BD24433996006F9A12 /* View.swift */,
 				0AB5FD732444F1BF005DBD66 /* Color.swift */,
-				0A01CD472445896400800E7D /* Text.swift */,
 			);
 			name = Extensions;
 			path = "SF Symbols Game/Extensions";
@@ -152,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				557AB15425C806C900CF5284 /* HapticFeedback.swift */,
+				0AC1BB63261225BF0017CD43 /* SFSymbolsFinder.swift */,
 			);
 			name = Utilities;
 			path = "SF Symbols Game/Utilities";
@@ -167,6 +193,7 @@
 				0ACE989A24432BB1006F9A12 /* Sources */,
 				0ACE989B24432BB1006F9A12 /* Frameworks */,
 				0ACE989C24432BB1006F9A12 /* Resources */,
+				0AC1BB62261223370017CD43 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,7 +201,7 @@
 			);
 			name = "SF Symbols Game";
 			packageProductDependencies = (
-				0A4320E32612168B00BF1EF9 /* SFSymbolsFinder */,
+				0AC1BB5F261223370017CD43 /* RRComponentsKit */,
 			);
 			productName = "Unofficial SF Symbols Game";
 			productReference = 0ACE989E24432BB1006F9A12 /* Symbols Game.app */;
@@ -205,7 +232,7 @@
 			);
 			mainGroup = 0ACE989524432BB1006F9A12;
 			packageReferences = (
-				0A4320E22612168B00BF1EF9 /* XCRemoteSwiftPackageReference "SFSymbolsFinder" */,
+				0AC1BB5E261223370017CD43 /* XCRemoteSwiftPackageReference "RRComponentsKit" */,
 			);
 			productRefGroup = 0ACE989F24432BB1006F9A12 /* Products */;
 			projectDirPath = "";
@@ -236,13 +263,14 @@
 			files = (
 				0ACE98B924432DC6006F9A12 /* Symbols.swift in Sources */,
 				0A01CD442445843100800E7D /* MainSymbolGameView.swift in Sources */,
+				0AC1BB64261225BF0017CD43 /* SFSymbolsFinder.swift in Sources */,
 				557AB15525C806C900CF5284 /* HapticFeedback.swift in Sources */,
 				0ACE98A224432BB1006F9A12 /* AppDelegate.swift in Sources */,
-				0A01CD482445896400800E7D /* Text.swift in Sources */,
 				0ACE98A724432BB1006F9A12 /* Unofficial_SF_Symbols_Game.xcdatamodeld in Sources */,
 				0A01CD432445843100800E7D /* BarButtonView.swift in Sources */,
 				0AB5FD742444F1BF005DBD66 /* Color.swift in Sources */,
 				0ACE98BE24433996006F9A12 /* View.swift in Sources */,
+				0AC1BB5A261222260017CD43 /* MainSymbolGameViewModel.swift in Sources */,
 				0ACE98BB24432FE4006F9A12 /* SymbolRow.swift in Sources */,
 				0ACE98A424432BB1006F9A12 /* SceneDelegate.swift in Sources */,
 			);
@@ -389,7 +417,7 @@
 				DEVELOPMENT_TEAM = YQZQG7N4WG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SF Symbols Game/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,7 +442,7 @@
 				DEVELOPMENT_TEAM = YQZQG7N4WG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SF Symbols Game/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,21 +480,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0A4320E22612168B00BF1EF9 /* XCRemoteSwiftPackageReference "SFSymbolsFinder" */ = {
+		0AC1BB5E261223370017CD43 /* XCRemoteSwiftPackageReference "RRComponentsKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/abadikaka/SFSymbolsFinder.git";
+			repositoryURL = "https://github.com/rudrankriyam/RRComponentsKit.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0A4320E32612168B00BF1EF9 /* SFSymbolsFinder */ = {
+		0AC1BB5F261223370017CD43 /* RRComponentsKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0A4320E22612168B00BF1EF9 /* XCRemoteSwiftPackageReference "SFSymbolsFinder" */;
-			productName = SFSymbolsFinder;
+			package = 0AC1BB5E261223370017CD43 /* XCRemoteSwiftPackageReference "RRComponentsKit" */;
+			productName = RRComponentsKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 
