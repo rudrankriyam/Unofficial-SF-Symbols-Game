@@ -1,6 +1,6 @@
-# Unofficial SF Symbols Game
+# SF Symbols Game
 
-Unofficial SF Symbols Game is simple game to help you get familar with the names of the amazing SF Symbols by Apple.
+SF Symbols Game is simple game to help you get familar with the names of the amazing SF Symbols by Apple.
 
 I find the naming of the symbols hard, though. It all started from a [tweet](https://twitter.com/Dimillian/status/1238116376491053058?s=20) by Thomas. 
 
@@ -25,3 +25,7 @@ I don't have a roadmap as such, but here are some of the ideas that I can think 
 </a>
 
 ![](https://github.com/rudrankriyam/Unofficial-SF-Symbols-Game/blob/master/Resources/0.1-Screenshot.png)
+
+# Credits
+
+Special thanks to [Michael](https://github.com/abadikaka) for [SFSymbolsFinder!](https://github.com/abadikaka/SFSymbolsFinder)
