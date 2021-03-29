@@ -9,12 +9,26 @@
 import SwiftUI
 import RRComponentsKit
 
-
 struct MainSymbolGameView: View {
     @EnvironmentObject var viewModel: MainSymbolGameViewModel
+    @State private var activeSheet: MainViewActiveSheet?
 
     var body: some View {
         VStack {
+            ZStack(alignment: .center, content: {
+                AppTitle("SF Symbols Game")
+                    .font(type: .poppins, weight: .bold, style: .title3)
+
+                HStack {
+                    Spacer()
+
+                    NavigationButton(imageName: "gear", label: "Settings") {
+                        activeSheet = .settings
+                    }
+                }
+            })
+            .padding(.horizontal)
+
             Text("SF Symbols Game")
                 .largeTitleText()
 
@@ -45,5 +59,14 @@ struct MainSymbolGameView: View {
 struct MainSymbolGameView_Previews: PreviewProvider {
     static var previews: some View {
         MainSymbolGameView()
+    }
+}
+
+enum MainViewActiveSheet: Identifiable {
+    case feedback
+    case settings
+
+    var id: Int {
+        hashValue
     }
 }
