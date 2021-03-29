@@ -12,7 +12,7 @@ import RRComponentsKit
 struct MainSymbolGameView: View {
     @EnvironmentObject var viewModel: MainSymbolGameViewModel
     @State private var activeSheet: MainViewActiveSheet?
-    @State private var selectedOption: String? = nil
+    @State private var selectedSymbol: Int? = nil
 
     var body: some View {
         VStack {
@@ -35,26 +35,31 @@ struct MainSymbolGameView: View {
             .padding(.horizontal)
 
             Spacer()
-
-            Image(systemName: viewModel.symbols[viewModel.correctAnswer])
-                .customImage()
-
+            Image(systemName: viewModel.symbols[viewModel.correctAnswer]).customImage()
             Spacer()
             
             ForEach(MainSymbolGameViewModel.numberOfOptions, id: \.self) { symbol in
-                SymbolRow(selectedOption: $selectedOption, symbolName: viewModel.symbols[symbol])
+                SymbolRow(selectedSymbol: $selectedSymbol, symbol: symbol)
                     .foregroundColor(.primary)
             }
-            .alert(isPresented: $viewModel.showingScore) {
-                Alert(title: Text(viewModel.scoreTitle), message: Text("Your score is \(viewModel.score)"), dismissButton: .default(Text("Continue")) {
-                    viewModel.askQuestion()
-                })
-            }
-            .sheet(item: $activeSheet) { sheet in
-                switch sheet {
-                    case .viewer: SymbolsViewerView()
-                    case .settings: SettingsView()
+
+            GradientButton(title: "Evaluate") {
+                if let selectedSymbol = selectedSymbol {
+                    viewModel.symbolTapped(selectedSymbol)
+                    self.selectedSymbol = nil
                 }
+            }
+            .padding(.horizontal)
+        }
+        .alert(isPresented: $viewModel.showingScore) {
+            Alert(title: Text(viewModel.scoreTitle), message: Text("Your score is \(viewModel.score)"), dismissButton: .default(Text("Continue")) {
+                viewModel.askQuestion()
+            })
+        }
+        .sheet(item: $activeSheet) { sheet in
+            switch sheet {
+                case .viewer: SymbolsViewerView()
+                case .settings: SettingsView()
             }
         }
     }

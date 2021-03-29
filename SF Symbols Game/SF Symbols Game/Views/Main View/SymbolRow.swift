@@ -9,24 +9,25 @@
 import SwiftUI
 
 struct SymbolRow: View {
-    @Binding var selectedOption: String?
-    let symbolName: String
+    @EnvironmentObject var viewModel: MainSymbolGameViewModel
+    @Binding var selectedSymbol: Int?
+    let symbol: Int
 
     var body: some View {
-        Button(action: { selectedOption = symbolName }) {
+        Button(action: { selectedSymbol = symbol }) {
             HStack(spacing: 10) {
-                Text(symbolName)
-                    .foregroundColor(symbolName == selectedOption ? .white : .primary)
+                Text(viewModel.symbols[symbol])
+                    .foregroundColor(symbol == selectedSymbol ? .white : .primary)
                     .kerning(1)
                     .font()
             }
-            .customBackground(isSelected: symbolName == selectedOption)
+            .customBackground(isSelected: symbol == selectedSymbol)
         }
     }
 }
 
 struct SymbolRow_Previews: PreviewProvider {
     static var previews: some View {
-        SymbolRow(selectedOption: .constant(""), symbolName: "gear")
+        SymbolRow(selectedSymbol: .constant(0), symbol: 0)
     }
 }

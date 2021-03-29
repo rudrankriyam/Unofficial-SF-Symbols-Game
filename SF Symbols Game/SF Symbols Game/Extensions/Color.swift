@@ -8,8 +8,16 @@
 
 import SwiftUI
 
-extension Color {
-    public static var primaryColor: Color {
+public extension Color {
+    static var primaryColor: Color {
         Color(.secondarySystemBackground)
+    }
+
+    static var brandPink: Color {
+        Color(red: 187/255, green: 58/255, blue: 95/255)
+    }
+
+    static var brandPurple: Color {
+        Color(red: 112/255, green: 60/255, blue: 131/255)
     }
 }
