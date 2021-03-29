@@ -14,6 +14,7 @@
 		0A02DF4B2612350800D0B356 /* SymbolsViewerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02DF4A2612350800D0B356 /* SymbolsViewerViewModel.swift */; };
 		0A02DF4E2612390A00D0B356 /* SymbolCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02DF4C261235AF00D0B356 /* SymbolCategories.swift */; };
 		0A02DF4F2612391700D0B356 /* SFSymbolsFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC1BB63261225BF0017CD43 /* SFSymbolsFinder.swift */; };
+		0A664BFA261266EA00EFA8F5 /* SymbolCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A664BF9261266EA00EFA8F5 /* SymbolCategoryView.swift */; };
 		0AB5FD742444F1BF005DBD66 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5FD732444F1BF005DBD66 /* Color.swift */; };
 		0AC1BB5A261222260017CD43 /* MainSymbolGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC1BB59261222260017CD43 /* MainSymbolGameViewModel.swift */; };
 		0AC1BB60261223370017CD43 /* RRComponentsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0AC1BB5F261223370017CD43 /* RRComponentsKit */; };
@@ -112,6 +113,7 @@
 		0A02DF482612306D00D0B356 /* SymbolsViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsViewerView.swift; sourceTree = "<group>"; };
 		0A02DF4A2612350800D0B356 /* SymbolsViewerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsViewerViewModel.swift; sourceTree = "<group>"; };
 		0A02DF4C261235AF00D0B356 /* SymbolCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCategories.swift; sourceTree = "<group>"; };
+		0A664BF9261266EA00EFA8F5 /* SymbolCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCategoryView.swift; sourceTree = "<group>"; };
 		0AB5FD732444F1BF005DBD66 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		0AC1BB54261217D20017CD43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "SF Symbols Game/Info.plist"; sourceTree = "<group>"; };
 		0AC1BB55261217E30017CD43 /* SF Symbols Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "SF Symbols Game.entitlements"; path = "SF Symbols Game/SF Symbols Game.entitlements"; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				0A02DF482612306D00D0B356 /* SymbolsViewerView.swift */,
+				0A664BF9261266EA00EFA8F5 /* SymbolCategoryView.swift */,
 			);
 			path = "Viewer View";
 			sourceTree = "<group>";
@@ -586,6 +589,7 @@
 				0AC1BB5A261222260017CD43 /* MainSymbolGameViewModel.swift in Sources */,
 				0A02DF4F2612391700D0B356 /* SFSymbolsFinder.swift in Sources */,
 				0ACE98BB24432FE4006F9A12 /* SymbolRow.swift in Sources */,
+				0A664BFA261266EA00EFA8F5 /* SymbolCategoryView.swift in Sources */,
 				0ACE98A424432BB1006F9A12 /* SceneDelegate.swift in Sources */,
 				0A02DF4B2612350800D0B356 /* SymbolsViewerViewModel.swift in Sources */,
 				0A02DF492612306D00D0B356 /* SymbolsViewerView.swift in Sources */,

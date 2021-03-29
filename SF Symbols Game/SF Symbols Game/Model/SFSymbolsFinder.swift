@@ -98,11 +98,6 @@ public enum General: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
-
 }
 
 // MARK: - Communication
@@ -201,11 +196,6 @@ public enum Communication: String, SFFinderConvertable, SFSymbolsEnum, CaseItera
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
-
 }
 
 // MARK: - Weather
@@ -285,10 +275,6 @@ public enum Weather: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
 
     var enumRawValue: String {
         return rawValue
-    }
-
-    public var body: some View {
-        image
     }
 }
 
@@ -537,10 +523,6 @@ public enum ObjectAndTools: String, SFFinderConvertable, SFSymbolsEnum, CaseIter
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - Devices
@@ -569,10 +551,6 @@ public enum Devices: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - Connectivity
@@ -593,16 +571,12 @@ public enum Connectivity: String, SFFinderConvertable, SFSymbolsEnum, CaseIterab
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - Transportation
 
 /// Transportation category for sf symbols
-public enum Transportation: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum Transportation: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case car
@@ -613,16 +587,12 @@ public enum Transportation: String, SFFinderConvertable, SFSymbolsEnum, View {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - Human
 
 /// Human category for sf symbol
-public enum Human: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum Human: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case person
@@ -678,16 +648,12 @@ public enum Human: String, SFFinderConvertable, SFSymbolsEnum, View {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - Nature
 
 /// Nature category for sf symbols
-public enum Nature: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum Nature: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case flame
@@ -711,16 +677,12 @@ public enum Nature: String, SFFinderConvertable, SFSymbolsEnum, View {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - Editing
 
 /// Editing category for editing sf symbols
-public enum Editing: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum Editing: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case pencil
@@ -774,16 +736,12 @@ public enum Editing: String, SFFinderConvertable, SFSymbolsEnum, View {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - TextFormatting
 
 /// Text formatting category for sf symbols
-public enum TextFormatting: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum TextFormatting: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case paragraph
@@ -822,16 +780,12 @@ public enum TextFormatting: String, SFFinderConvertable, SFSymbolsEnum, View {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - Media
 
 /// Media category for sf symbols
-public enum Media: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum Media: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case play
@@ -917,16 +871,12 @@ public enum Media: String, SFFinderConvertable, SFSymbolsEnum, View {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - Keyboard
 
 /// Keyboard category for sf symbols
-public enum Keyboard: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum Keyboard: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case command
@@ -961,16 +911,12 @@ public enum Keyboard: String, SFFinderConvertable, SFSymbolsEnum, View {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - Commerce
 
 /// Commerce category for sf symbols
-public enum Commerce: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum Commerce: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case signature
@@ -992,16 +938,12 @@ public enum Commerce: String, SFFinderConvertable, SFSymbolsEnum, View {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - Time
 
 /// Time category for finding sf symbols
-public enum Time: String, SFFinderConvertable, View {
+public enum Time: String, SFFinderConvertable, CaseIterable {
     // MARK: iOS 13+
 
     case clock
@@ -1015,16 +957,12 @@ public enum Time: String, SFFinderConvertable, View {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - Health
 
 /// Health category representation
-public enum Health: String, SFFinderConvertable, View {
+public enum Health: String, SFFinderConvertable, CaseIterable {
     // MARK: iOS 13+
 
     case heart
@@ -1042,16 +980,12 @@ public enum Health: String, SFFinderConvertable, View {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - Shapes
 
 /// Shape category representation
-public enum Shapes: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum Shapes: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case rectangle
@@ -1074,16 +1008,12 @@ public enum Shapes: String, SFFinderConvertable, SFSymbolsEnum, View {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - Arrows
 
 /// SF Symbols for arrow representation
-public enum Arrows: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum Arrows: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case arrowshapeTurnUpLeft
@@ -1278,16 +1208,12 @@ public enum Arrows: String, SFFinderConvertable, SFSymbolsEnum, View {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - Indices
 
 /// SFSymbols for indices category symbols
-public enum Indices: String, SFFinderConvertable, SFSymbolsEnum, View  {
+public enum Indices: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case questionmarkCircle
@@ -1366,66 +1292,52 @@ public enum Indices: String, SFFinderConvertable, SFSymbolsEnum, View  {
     }
 
     /// SFSymbols for retrieving currency symbols
-    public enum Currency: SFFinderConvertable, SFSymbolsHasValidator, View {
-        // MARK: iOS 13+
-
-        case circle(currency: AvailableCurrency)
-        case circleFill(currency: AvailableCurrency)
-        case square(currency: AvailableCurrency)
-        case squareFill(currency: AvailableCurrency)
-
-        public var body: some View {
-            image
-        }
-    }
-
-    /// SFSymbols for retrieving the number symbols
-    /// Using Generic type in case want to put 01 or 02 as a String instead Int
-    public enum Number<Type>: SFFinderConvertable, SFSymbolsHasValidator, View {
-        // MARK: iOS 13+
-
-        case circle(number: Type)
-        case circleFill(number: Type)
-        case altCircle(number: Type)
-        case altCircleFill(number: Type)
-        case square(number: Type)
-        case squareFill(number: Type)
-        case altSquare(number: Type)
-        case altSquareFill(number: Type)
-
-        public var body: some View {
-            image
-        }
-    }
-
-    /// SFSymbols for getting the alphabet symbols
-    public enum Alphabet: SFFinderConvertable, SFSymbolsHasValidator, View {
-        // MARK: iOS 13+
-
-        case circle(character: Character)
-        case circleFill(character: Character)
-        case square(character: Character)
-        case squareFill(character: Character)
-
-        public var body: some View {
-            image
-        }
-    }
-
+//    public enum Currency: SFFinderConvertable, SFSymbolsHasValidator, CaseIterable {
+//        // MARK: iOS 13+
+//
+//        case circle(currency: AvailableCurrency)
+//        case circleFill(currency: AvailableCurrency)
+//        case square(currency: AvailableCurrency)
+//        case squareFill(currency: AvailableCurrency)
+//
+//    }
+//
+//    /// SFSymbols for retrieving the number symbols
+//    /// Using Generic type in case want to put 01 or 02 as a String instead Int
+//    public enum Number<Type>: SFFinderConvertable, SFSymbolsHasValidator, CaseIterable {
+//        // MARK: iOS 13+
+//
+//        case circle(number: Type)
+//        case circleFill(number: Type)
+//        case altCircle(number: Type)
+//        case altCircleFill(number: Type)
+//        case square(number: Type)
+//        case squareFill(number: Type)
+//        case altSquare(number: Type)
+//        case altSquareFill(number: Type)
+//
+//    }
+//
+//    /// SFSymbols for getting the alphabet symbols
+//    public enum Alphabet: SFFinderConvertable, SFSymbolsHasValidator, CaseIterable {
+//        // MARK: iOS 13+
+//
+//        case circle(character: Character)
+//        case circleFill(character: Character)
+//        case square(character: Character)
+//        case squareFill(character: Character)
+//
+//    }
+//
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
-
 }
 
 // MARK: - Math
 
 /// SFSymbol for mathematics operation
-public enum Math: String, SFFinderConvertable, SFSymbolsEnum, View  {
+public enum Math: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case sum
@@ -1481,16 +1393,12 @@ public enum Math: String, SFFinderConvertable, SFSymbolsEnum, View  {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - Gaming
 
 /// SFSymbol for gaming icon
-public enum Gaming: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum Gaming: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 14+
     case circleGridCross
     case circleGridCrossFill
@@ -1564,16 +1472,12 @@ public enum Gaming: String, SFFinderConvertable, SFSymbolsEnum, View {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - Multicolor
 
 /// SFSymbol for multicolor icon
-public enum Multicolor: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum Multicolor: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
 
     // MARK: iOS 14+
 
@@ -1746,16 +1650,12 @@ public enum Multicolor: String, SFFinderConvertable, SFSymbolsEnum, View {
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 // MARK: - All
 
 /// All category for sf symbols, not included in any category, exclude the number need to use Indices
-public enum All: String, SFFinderConvertable, SFSymbolsEnum, View, CaseIterable {
+public enum All: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     case squareAndArrowUp
     case squareAndArrowUpFill
     case squareAndArrowDown
@@ -4116,10 +4016,6 @@ public enum All: String, SFFinderConvertable, SFSymbolsEnum, View, CaseIterable 
     var enumRawValue: String {
         return rawValue
     }
-
-    public var body: some View {
-        image
-    }
 }
 
 //
@@ -4137,74 +4033,74 @@ final class SFSymbolsValidator: SFSymbolsValidation {
 
     func validateSystemName<T>(for type: T) -> String where T : SFFinderConvertable {
         switch type {
-        case let type as Indices.Currency:
-            var finalName = ""
-            switch type {
-            case .circle(let currency):
-                finalName += "\(currency.rawValue)sign.circle"
-            case .circleFill(let currency):
-                finalName += "\(currency.rawValue)sign.circle.fill"
-            case .square(let currency):
-                finalName += "\(currency.rawValue)sign.square"
-            case .squareFill(let currency):
-                finalName += "\(currency.rawValue)sign.square.fill"
-            }
-            return finalName
-        case let type as Indices.Alphabet:
-            var finalName = ""
-            switch type {
-            case .circle(let character):
-                finalName += "\(character.rawValue).circle"
-            case .circleFill(let character):
-                finalName += "\(character.rawValue).circle.fill"
-            case .square(let character):
-                finalName += "\(character.rawValue).square"
-            case .squareFill(let character):
-                finalName += "\(character.rawValue).square.fill"
-            }
-            return finalName
-        case let type as Indices.Number<Int>:
-            var finalName = ""
-            switch type {
-            case .circle(let number):
-                finalName += "\(number).circle"
-            case .circleFill(let number):
-                finalName += "\(number).circle.fill"
-            case .altCircle(let number):
-                finalName += "\(number).alt.circle"
-            case .altCircleFill(let number):
-                finalName += "\(number).alt.circle.fill"
-            case .square(let number):
-                finalName += "\(number).square"
-            case .squareFill(let number):
-                finalName += "\(number).square.fill"
-            case .altSquare(let number):
-                finalName += "\(number).alt.square"
-            case .altSquareFill(let number):
-                finalName += "\(number).alt.square.fill"
-            }
-            return finalName
-        case let type as Indices.Number<String>:
-            var finalName = ""
-            switch type {
-            case .circle(let number):
-                finalName += "\(number).circle"
-            case .circleFill(let number):
-                finalName += "\(number).circle.fill"
-            case .altCircle(let number):
-                finalName += "\(number).alt.circle"
-            case .altCircleFill(let number):
-                finalName += "\(number).alt.circle.fill"
-            case .square(let number):
-                finalName += "\(number).square"
-            case .squareFill(let number):
-                finalName += "\(number).square.fill"
-            case .altSquare(let number):
-                finalName += "\(number).alt.square"
-            case .altSquareFill(let number):
-                finalName += "\(number).alt.square.fill"
-            }
-            return finalName
+//        case let type as Indices.Currency:
+//            var finalName = ""
+//            switch type {
+//            case .circle(let currency):
+//                finalName += "\(currency.rawValue)sign.circle"
+//            case .circleFill(let currency):
+//                finalName += "\(currency.rawValue)sign.circle.fill"
+//            case .square(let currency):
+//                finalName += "\(currency.rawValue)sign.square"
+//            case .squareFill(let currency):
+//                finalName += "\(currency.rawValue)sign.square.fill"
+//            }
+//            return finalName
+//        case let type as Indices.Alphabet:
+//            var finalName = ""
+//            switch type {
+//            case .circle(let character):
+//                finalName += "\(character.rawValue).circle"
+//            case .circleFill(let character):
+//                finalName += "\(character.rawValue).circle.fill"
+//            case .square(let character):
+//                finalName += "\(character.rawValue).square"
+//            case .squareFill(let character):
+//                finalName += "\(character.rawValue).square.fill"
+//            }
+//            return finalName
+//        case let type as Indices.Number<Int>:
+//            var finalName = ""
+//            switch type {
+//            case .circle(let number):
+//                finalName += "\(number).circle"
+//            case .circleFill(let number):
+//                finalName += "\(number).circle.fill"
+//            case .altCircle(let number):
+//                finalName += "\(number).alt.circle"
+//            case .altCircleFill(let number):
+//                finalName += "\(number).alt.circle.fill"
+//            case .square(let number):
+//                finalName += "\(number).square"
+//            case .squareFill(let number):
+//                finalName += "\(number).square.fill"
+//            case .altSquare(let number):
+//                finalName += "\(number).alt.square"
+//            case .altSquareFill(let number):
+//                finalName += "\(number).alt.square.fill"
+//            }
+//            return finalName
+//        case let type as Indices.Number<String>:
+//            var finalName = ""
+//            switch type {
+//            case .circle(let number):
+//                finalName += "\(number).circle"
+//            case .circleFill(let number):
+//                finalName += "\(number).circle.fill"
+//            case .altCircle(let number):
+//                finalName += "\(number).alt.circle"
+//            case .altCircleFill(let number):
+//                finalName += "\(number).alt.circle.fill"
+//            case .square(let number):
+//                finalName += "\(number).square"
+//            case .squareFill(let number):
+//                finalName += "\(number).square.fill"
+//            case .altSquare(let number):
+//                finalName += "\(number).alt.square"
+//            case .altSquareFill(let number):
+//                finalName += "\(number).alt.square.fill"
+//            }
+//            return finalName
         case let type as SFSymbolsEnum:
             if let objectType = type as? ObjectAndTools, objectType == .oneMagnifyingglass {
                 return "1.magnifyingglass"

@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import RRComponentsKit
 
 struct SymbolsViewerView: View {
     
@@ -18,16 +19,17 @@ struct SymbolsViewerView: View {
                     .padding(.horizontal)
 
                 ScrollView(.vertical, showsIndicators: false) {
-                    LazyVStack(spacing: 10) {
+                    LazyVStack {
                         ForEach(SymbolCategories.allCases, id: \.self) { symbol in
+                            NavigationLink(destination: SymbolCategoryView(category: symbol)) {
                             Label(symbol.name, systemImage: symbol.image).font()
                                 .customBackground()
+                            }
                         }
                     }
                 }
             }
             .navigationBarHidden(true)
-            .background(Color.black)
         }
     }
 }

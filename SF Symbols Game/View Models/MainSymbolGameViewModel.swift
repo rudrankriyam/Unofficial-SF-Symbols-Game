@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import SFSymbolsFinder
 
 class MainSymbolGameViewModel: ObservableObject {
     // MARK:- Published Properties
