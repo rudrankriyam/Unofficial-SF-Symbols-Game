@@ -20,6 +20,10 @@ struct MainSymbolGameView: View {
                     .font(type: .poppins, weight: .bold, style: .title3)
 
                 HStack {
+                    NavigationButton(imageName: "doc.text.viewfinder", label: "Viewer") {
+                        activeSheet = .viewer
+                    }
+
                     Spacer()
 
                     NavigationButton(imageName: "gear", label: "Settings") {
@@ -28,9 +32,6 @@ struct MainSymbolGameView: View {
                 }
             })
             .padding(.horizontal)
-
-            Text("SF Symbols Game")
-                .largeTitleText()
 
             Spacer()
 
@@ -51,6 +52,12 @@ struct MainSymbolGameView: View {
                         viewModel.askQuestion()
                     })
                 }
+                .sheet(item: $activeSheet) { sheet in
+                    switch sheet {
+                        case .viewer: SymbolsViewerView()
+                        case .settings: SettingsView()
+                    }
+                }
             }
         }
     }
@@ -63,7 +70,7 @@ struct MainSymbolGameView_Previews: PreviewProvider {
 }
 
 enum MainViewActiveSheet: Identifiable {
-    case feedback
+    case viewer
     case settings
 
     var id: Int {

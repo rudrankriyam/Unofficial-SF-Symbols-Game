@@ -14,12 +14,13 @@ extension View {
         let rightColor = Color(red: 112/255, green: 60/255, blue: 131/255)
 
         return self
-            .padding(20)
+            .padding()
             .foregroundColor(.primary)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .overlay(RoundedRectangle(cornerRadius: 16)
+            .overlay(RoundedRectangle(cornerRadius: 12)
                 .stroke(LinearGradient(gradient: Gradient(colors: [leftColor, rightColor]), startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 2))
-            .padding([.horizontal, .bottom])
+            .padding(.horizontal)
+            .padding(.bottom, 4)
     }
 
     func customImage() -> some View {

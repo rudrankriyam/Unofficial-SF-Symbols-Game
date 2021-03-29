@@ -48,7 +48,7 @@ extension SFSymbolsHasValidator {
 // MARK: - General
 
 /// General category for sf symbols, not included in any category
-public enum General: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum General: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case lineHorizontal3
@@ -108,7 +108,7 @@ public enum General: String, SFFinderConvertable, SFSymbolsEnum, View {
 // MARK: - Communication
 
 /// Communication category for sf symbols
-public enum Communication: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum Communication: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case mic
@@ -211,7 +211,7 @@ public enum Communication: String, SFFinderConvertable, SFSymbolsEnum, View {
 // MARK: - Weather
 
 /// Weather category for sf symbols
-public enum Weather: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum Weather: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case sunMin
@@ -295,7 +295,7 @@ public enum Weather: String, SFFinderConvertable, SFSymbolsEnum, View {
 // MARK: - ObjectAndTools
 
 /// Object and tools category sf symbols
-public enum ObjectAndTools: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum ObjectAndTools: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case pencil
@@ -546,7 +546,7 @@ public enum ObjectAndTools: String, SFFinderConvertable, SFSymbolsEnum, View {
 // MARK: - Devices
 
 /// Devices category for sf symbols
-public enum Devices: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum Devices: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case keyboard
@@ -578,7 +578,7 @@ public enum Devices: String, SFFinderConvertable, SFSymbolsEnum, View {
 // MARK: - Connectivity
 
 /// Connectivity category for sf symbols
-public enum Connectivity: String, SFFinderConvertable, SFSymbolsEnum, View {
+public enum Connectivity: String, SFFinderConvertable, SFSymbolsEnum, CaseIterable {
     // MARK: iOS 13+
 
     case wifi

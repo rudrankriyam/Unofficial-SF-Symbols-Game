@@ -16,8 +16,10 @@ struct SymbolRow: View {
             Image(systemName: "circle")
                 .font(.title)
                 .frame(minWidth: 40, alignment: .leading)
+                
             Text(symbolName)
                 .kerning(1)
+                .font()
         }
         .customBackground()
     }
