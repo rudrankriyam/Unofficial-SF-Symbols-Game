@@ -25,3 +25,7 @@ I don't have a roadmap as such, but here are some of the ideas that I can think 
 </a>
 
 ![](https://github.com/rudrankriyam/Unofficial-SF-Symbols-Game/blob/master/Resources/0.1-Screenshot.png)
+
+# Credits
+
+Special thanks to [Michael](https://github.com/abadikaka) for [SFSymbolsFinder]!(https://github.com/abadikaka/SFSymbolsFinder)
