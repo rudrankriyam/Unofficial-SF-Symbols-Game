@@ -9,16 +9,22 @@
 import SwiftUI
 
 extension View {
-    func customBackground() -> some View {
+    func customBackground(isSelected: Bool = false) -> some View {
         let leftColor = Color(red: 187/255, green: 58/255, blue: 95/255)
         let rightColor = Color(red: 112/255, green: 60/255, blue: 131/255)
+
+        var gradient: LinearGradient {
+            LinearGradient(gradient: Gradient(colors: [leftColor, rightColor]), startPoint: .topLeading, endPoint: .bottomTrailing)
+        }
 
         return self
             .padding()
             .foregroundColor(.primary)
             .frame(maxWidth: .infinity, alignment: .leading)
             .overlay(RoundedRectangle(cornerRadius: 12)
-                .stroke(LinearGradient(gradient: Gradient(colors: [leftColor, rightColor]), startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 2))
+                .stroke(gradient, lineWidth: 2))
+            .background(isSelected ? RoundedRectangle(cornerRadius: 12)
+                .fill(gradient) : nil)
             .padding(.horizontal)
             .padding(.bottom, 4)
     }

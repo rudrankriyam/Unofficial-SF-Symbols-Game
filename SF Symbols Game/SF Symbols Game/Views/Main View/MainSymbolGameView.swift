@@ -12,6 +12,7 @@ import RRComponentsKit
 struct MainSymbolGameView: View {
     @EnvironmentObject var viewModel: MainSymbolGameViewModel
     @State private var activeSheet: MainViewActiveSheet?
+    @State private var selectedOption: String? = nil
 
     var body: some View {
         VStack {
@@ -41,22 +42,18 @@ struct MainSymbolGameView: View {
             Spacer()
             
             ForEach(MainSymbolGameViewModel.numberOfOptions, id: \.self) { symbol in
-                Button(action: {
-                    viewModel.symbolTapped(symbol)
-                }) {
-                    SymbolRow(symbolName: viewModel.symbols[symbol])
-                        .foregroundColor(.primary)
-                }
-                .alert(isPresented: $viewModel.showingScore) {
-                    Alert(title: Text(viewModel.scoreTitle), message: Text("Your score is \(viewModel.score)"), dismissButton: .default(Text("Continue")) {
-                        viewModel.askQuestion()
-                    })
-                }
-                .sheet(item: $activeSheet) { sheet in
-                    switch sheet {
-                        case .viewer: SymbolsViewerView()
-                        case .settings: SettingsView()
-                    }
+                SymbolRow(selectedOption: $selectedOption, symbolName: viewModel.symbols[symbol])
+                    .foregroundColor(.primary)
+            }
+            .alert(isPresented: $viewModel.showingScore) {
+                Alert(title: Text(viewModel.scoreTitle), message: Text("Your score is \(viewModel.score)"), dismissButton: .default(Text("Continue")) {
+                    viewModel.askQuestion()
+                })
+            }
+            .sheet(item: $activeSheet) { sheet in
+                switch sheet {
+                    case .viewer: SymbolsViewerView()
+                    case .settings: SettingsView()
                 }
             }
         }

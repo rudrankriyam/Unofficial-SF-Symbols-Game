@@ -9,20 +9,24 @@
 import SwiftUI
 
 struct SymbolRow: View {
-    var symbolName: String
+    @Binding var selectedOption: String?
+    let symbolName: String
 
     var body: some View {
-        HStack(spacing: 10) {
-            Text(symbolName)
-                .kerning(1)
-                .font()
+        Button(action: { selectedOption = symbolName }) {
+            HStack(spacing: 10) {
+                Text(symbolName)
+                    .foregroundColor(symbolName == selectedOption ? .white : .primary)
+                    .kerning(1)
+                    .font()
+            }
+            .customBackground(isSelected: symbolName == selectedOption)
         }
-        .customBackground()
     }
 }
 
 struct SymbolRow_Previews: PreviewProvider {
     static var previews: some View {
-        SymbolRow(symbolName: "gear")
+        SymbolRow(selectedOption: .constant(""), symbolName: "gear")
     }
 }
