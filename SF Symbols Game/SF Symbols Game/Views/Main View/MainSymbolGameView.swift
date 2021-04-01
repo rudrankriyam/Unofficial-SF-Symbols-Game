@@ -13,27 +13,28 @@ struct MainSymbolGameView: View {
     @EnvironmentObject var viewModel: MainSymbolGameViewModel
     @State private var activeSheet: MainViewActiveSheet?
     @State private var selectedSymbol: Int? = nil
-
+    
     var body: some View {
         VStack {
-            ZStack(alignment: .center, content: {
-                AppTitle("SF Symbols Game")
-                    .font(type: .poppins, weight: .bold, style: .title3)
-
-                HStack {
-                    NavigationButton(imageName: "doc.text.viewfinder", label: "Viewer") {
-                        activeSheet = .viewer
-                    }
-
-                    Spacer()
-
-                    NavigationButton(imageName: "gear", label: "Settings") {
-                        activeSheet = .settings
-                    }
+            HStack {
+                NavigationButton(imageName: "doc.text.viewfinder", label: "Viewer") {
+                    activeSheet = .viewer
                 }
-            })
+                
+                Spacer()
+                
+                NavigationButton(imageName: "gear", label: "Settings") {
+                    activeSheet = .settings
+                }
+            }
             .padding(.horizontal)
-
+            
+            Text("What is the name of this symbol?")
+                .font(weight: .bold, style: .largeTitle)
+                .frame(maxWidth: .infinity, alignment: .center)
+                .multilineTextAlignment(.center)
+                .padding([.horizontal, .top])
+            
             Spacer()
             Image(systemName: viewModel.symbols[viewModel.correctAnswer]).customImage()
             Spacer()
@@ -42,14 +43,14 @@ struct MainSymbolGameView: View {
                 SymbolRow(selectedSymbol: $selectedSymbol, symbol: symbol)
                     .foregroundColor(.primary)
             }
-
+            
             GradientButton(title: "Evaluate") {
                 if let selectedSymbol = selectedSymbol {
                     viewModel.symbolTapped(selectedSymbol)
                     self.selectedSymbol = nil
                 }
             }
-            .padding(.horizontal)
+            .padding([.horizontal, .bottom])
         }
         .alert(isPresented: $viewModel.showingScore) {
             Alert(title: Text(viewModel.scoreTitle), message: Text("Your score is \(viewModel.score)"), dismissButton: .default(Text("Continue")) {
@@ -58,8 +59,8 @@ struct MainSymbolGameView: View {
         }
         .sheet(item: $activeSheet) { sheet in
             switch sheet {
-                case .viewer: SymbolsViewerView()
-                case .settings: SettingsView()
+            case .viewer: SymbolsViewerView()
+            case .settings: SettingsView()
             }
         }
     }
@@ -74,7 +75,7 @@ struct MainSymbolGameView_Previews: PreviewProvider {
 enum MainViewActiveSheet: Identifiable {
     case viewer
     case settings
-
+    
     var id: Int {
         hashValue
     }
