@@ -2,11 +2,29 @@
   "object": {
     "pins": [
       {
+        "package": "Purchases",
+        "repositoryURL": "https://github.com/RevenueCat/purchases-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "67b9cc79ce9446a6bcf364a282eb6a993db83de3",
+          "version": "3.10.7"
+        }
+      },
+      {
         "package": "RRComponentsKit",
         "repositoryURL": "https://github.com/rudrankriyam/RRComponentsKit.git",
         "state": {
           "branch": "main",
           "revision": "a127b579501c2ca8e0fdd6e50b6c554456cc3554",
+          "version": null
+        }
+      },
+      {
+        "package": "RRSettingsKit",
+        "repositoryURL": "https://github.com/rudrankriyam/RRSettingsKit.git",
+        "state": {
+          "branch": "main",
+          "revision": "4aa9018d2b3d78a70d91838c5605b7348724ac25",
           "version": null
         }
       }
