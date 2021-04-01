@@ -22,32 +22,17 @@
 	<string>public.app-category.puzzle-games</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-    <key>UIAppFonts</key>
-    <array>
-        <string>Poppins-Regular.ttf</string>
-        <string>Poppins-Light.ttf</string>
-        <string>Poppins-LightItalic.ttf</string>
-        <string>Poppins-Medium.ttf</string>
-        <string>Poppins-BoldItalic.ttf</string>
-        <string>Poppins-Black.ttf</string>
-        <string>Poppins-Bold.ttf</string>
-        <string>Poppins-SemiBold.ttf</string>
-        <string>OpenSans-Regular.ttf</string>
-        <string>OpenSans-Light.ttf</string>
-        <string>OpenSans-LightItalic.ttf</string>
-        <string>OpenSans-Medium.ttf</string>
-        <string>OpenSans-Bold.ttf</string>
-        <string>OpenSans-SemiBold.ttf</string>
-        <string>Montserrat-Regular.ttf</string>
-        <string>Montserrat-Light.ttf</string>
-        <string>Montserrat-LightItalic.ttf</string>
-        <string>Montserrat-Medium.ttf</string>
-        <string>Montserrat-Bold.ttf</string>
-        <string>Montserrat-SemiBold.ttf</string>
-        <string>Montserrat-Black.ttf</string>
-        <string>JosefinSans-Bold.ttf</string>
-        <string>JosefinSans-BoldItalic.ttf</string>
-    </array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Poppins-Regular.ttf</string>
+		<string>Poppins-Light.ttf</string>
+		<string>Poppins-LightItalic.ttf</string>
+		<string>Poppins-Medium.ttf</string>
+		<string>Poppins-BoldItalic.ttf</string>
+		<string>Poppins-Black.ttf</string>
+		<string>Poppins-Bold.ttf</string>
+		<string>Poppins-SemiBold.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
