@@ -71,24 +71,15 @@ struct SettingsView: View {
                     }
                     .modifier(BackgroundModifier())
                     
-                    VStack(alignment: .leading) {
-                        // MARK: - PERSONAL TWITTER ACCOUNT
-                        Button(action: {
-                            self.openTwitter(twitterURLApp: String.personalTwitterApp, twitterURLWeb: String.personalTwitterWeb)
-                        }, label: {
-                            SettingsRow(imageName: "textbox", title: "Developer's Twitter")
-                        })
-                    }
-                    .modifier(BackgroundModifier())
+                    TwitterRow(imageName: "textbox", title: "Developer's Twitter", twitterAppURL: String.personalTwitterApp, twitterWebURL: String.personalTwitterWeb)
+                        .modifier(BackgroundModifier())
                     
                     AboutView(title: "MADE WITH ❤️ BY RUDRANK RIYAM")
                         .font()
                         .accessibility(label: Text("MADE WITH LOVE BY RUDRANK RIYAM"))
                         .padding(.bottom)
                     
-                    Text("Contributors")
-                        .largeTitleText(topPadding: 37)
-                        .padding(.horizontal)
+                    Text("Contributors").largeTitleText()
                     
                     TwitterRow(imageName: "squareshape.controlhandles.on.squareshape.controlhandles", title: "App Icon by Harshil Patel", twitterAppURL: "twitter://user?screen_name=harshiilp", twitterWebURL: "https://www.twitter.com/harshiilp")
                         .modifier(BackgroundModifier())
@@ -113,17 +104,6 @@ struct SettingsView: View {
         else if let yahooMail = yahooMail, UIApplication.shared.canOpenURL(yahooMail){ return yahooMail }
         else if let sparkUrl = sparkUrl, UIApplication.shared.canOpenURL(sparkUrl) { return sparkUrl }
         return nil
-    }
-    
-    
-    private func openTwitter(twitterURLApp: String, twitterURLWeb: String) {
-        let twUrl = URL(string: twitterURLApp)!
-        let twUrlWeb = URL(string: twitterURLWeb)!
-        if UIApplication.shared.canOpenURL(twUrl){
-            UIApplication.shared.open(twUrl, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.open(twUrlWeb, options: [:], completionHandler: nil)
-        }
     }
     
     private func writeReview() {
