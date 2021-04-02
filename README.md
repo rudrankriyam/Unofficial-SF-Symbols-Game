@@ -10,9 +10,9 @@ I haven't been able to work on it for months, but I want to pick it up again.
 
 I don't have a roadmap as such, but here are some of the ideas that I can think out loud - 
 
-- [ ] Grid layout for all the symbols to create a viewer app as well.
+- [x] Grid layout for all the symbols to create a viewer app as well.
 - [ ] Take inspiration from other hypercasual games on the store. 
-- [ ] Settings screen. 
+- [x] Settings screen. 
 - [ ] History screen.
 - [ ] Game Center support.
 - [ ] Three game modes - Chill, Timed, Aggressive. 
