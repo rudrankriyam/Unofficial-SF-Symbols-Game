@@ -28,4 +28,5 @@ I don't have a roadmap as such, but here are some of the ideas that I can think 
 
 # Credits
 
-Special thanks to [Michael](https://github.com/abadikaka) for [SFSymbolsFinder!](https://github.com/abadikaka/SFSymbolsFinder)
+- [Michael](https://github.com/abadikaka) for [SFSymbolsFinder!](https://github.com/abadikaka/SFSymbolsFinder)
+- [Harshil](https://github.com/harshiilp) for creating the new app icon!
