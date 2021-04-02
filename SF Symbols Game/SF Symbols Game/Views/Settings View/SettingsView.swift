@@ -80,10 +80,18 @@ struct SettingsView: View {
                         })
                     }
                     .modifier(BackgroundModifier())
+                    
                     AboutView(title: "MADE WITH ❤️ BY RUDRANK RIYAM")
                         .font()
                         .accessibility(label: Text("MADE WITH LOVE BY RUDRANK RIYAM"))
                         .padding(.bottom)
+                    
+                    Text("Contributors")
+                        .largeTitleText(topPadding: 37)
+                        .padding(.horizontal)
+                    
+                    TwitterRow(imageName: "squareshape.controlhandles.on.squareshape.controlhandles", title: "App Icon by Harshil Patel", twitterAppURL: "twitter://user?screen_name=harshiilp", twitterWebURL: "https://www.twitter.com/harshiilp")
+                        .modifier(BackgroundModifier())
                 }
             }
             .padding(.horizontal)
