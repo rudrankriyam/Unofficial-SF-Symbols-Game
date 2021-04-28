@@ -16,19 +16,7 @@ struct MainSymbolGameView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                NavigationButton(imageName: "doc.text.viewfinder", label: "Viewer") {
-                    activeSheet = .viewer
-                }
-                
-                Spacer()
-                
-                NavigationButton(imageName: "gear", label: "Settings") {
-                    activeSheet = .settings
-                }
-            }
-            .padding(.horizontal)
-            
+
             Text("What is the name of this symbol?")
                 .font(weight: .bold, style: .largeTitle)
                 .frame(maxWidth: .infinity, alignment: .center)
@@ -57,12 +45,6 @@ struct MainSymbolGameView: View {
                 viewModel.askQuestion()
             })
         }
-        .sheet(item: $activeSheet) { sheet in
-            switch sheet {
-            case .viewer: SymbolsViewerView()
-            case .settings: SettingsView()
-            }
-        }
     }
 }
 
@@ -72,11 +54,3 @@ struct MainSymbolGameView_Previews: PreviewProvider {
     }
 }
 
-enum MainViewActiveSheet: Identifiable {
-    case viewer
-    case settings
-    
-    var id: Int {
-        hashValue
-    }
-}

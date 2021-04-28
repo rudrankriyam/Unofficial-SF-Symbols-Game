@@ -26,10 +26,10 @@ struct SettingsView: View {
                 Text("Settings").largeTitleText()
                 
                 ScrollView {
-//                    VStack(alignment: .leading) {
-//                        SettingsNavigationRow(imageName: "hourglass", title: "Tip Jar", destination: IAPView().environmentObject(SubscriptionManager.shared))
-//                    }
-//                    .modifier(BackgroundModifier())
+                    VStack(alignment: .leading) {
+                        SettingsNavigationRow(imageName: "hourglass", title: "Tip Jar", destination: IAPView().environmentObject(SubscriptionManager.shared))
+                    }
+                    .modifier(BackgroundModifier())
                     
                     VStack(alignment: .leading) {
                         SettingsActionRow(imageName: "pencil.and.outline", title: "Write a review", action: writeReview)
