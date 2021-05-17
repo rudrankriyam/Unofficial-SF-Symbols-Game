@@ -9,7 +9,7 @@
 import SwiftUI
 import RRComponentsKit
 
-enum MainViewActiveSheet: Identifiable {
+enum MainViewActiveSheet: Identifiable, CaseIterable {
     case arcade
     case death
     case casual
@@ -26,16 +26,8 @@ struct MainView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Spacer()
-                
-                NavigationButton(imageName: "gear", label: "Settings") {
-                    activeSheet = .settings
-                }
-            }
-            .padding(.horizontal)
-            
-            Text("SF Symbols Game").largeTitleText()
+              Text("SF Symbols Game")
+                .largeTitleText()
             
             Spacer()
             
@@ -44,7 +36,7 @@ struct MainView: View {
                     MainViewGridItem(image: "🕹", mode: "arcade") {
                         activeSheet = .arcade
                     }
-                    MainViewGridItem(image: "☠️", mode: "death") {
+                    MainViewGridItem(image: "⏳", mode: "challenge") {
                         activeSheet = .death
                     }
                 }
@@ -62,6 +54,10 @@ struct MainView: View {
             }
             
             Spacer()
+                    
+          NavigationButton(imageName: "gear", label: "Settings") {
+              activeSheet = .settings
+          }
         }
         .padding(.horizontal)
         .sheet(item: $activeSheet) { sheet in

@@ -9,7 +9,7 @@
 import SwiftUI
 
 extension View {
-    func customBackground(isSelected: Bool = true) -> some View {
+    func customBackground(isSelected: Bool = false) -> some View {
         var gradient: LinearGradient {
             LinearGradient(gradient: Gradient(colors: [.brandPink, .brandPurple]), startPoint: .topLeading, endPoint: .bottomTrailing)
         }
