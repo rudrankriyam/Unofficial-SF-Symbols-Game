@@ -11,16 +11,17 @@
 		0A01CD442445843100800E7D /* MainSymbolGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01CD422445843100800E7D /* MainSymbolGameView.swift */; };
 		0A02DF4526122D1D00D0B356 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02DF4426122D1D00D0B356 /* SettingsView.swift */; };
 		0A02DF492612306D00D0B356 /* SymbolsViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02DF482612306D00D0B356 /* SymbolsViewerView.swift */; };
-		0A02DF4B2612350800D0B356 /* SymbolsViewerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02DF4A2612350800D0B356 /* SymbolsViewerViewModel.swift */; };
 		0A02DF4E2612390A00D0B356 /* SymbolCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02DF4C261235AF00D0B356 /* SymbolCategories.swift */; };
 		0A02DF4F2612391700D0B356 /* SFSymbolsFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC1BB63261225BF0017CD43 /* SFSymbolsFinder.swift */; };
+		0A3F4A922638D543000F3418 /* MainSymbolGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F4A902638D543000F3418 /* MainSymbolGameViewModel.swift */; };
+		0A3F4A932638D543000F3418 /* SymbolsViewerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F4A912638D543000F3418 /* SymbolsViewerViewModel.swift */; };
+		0A3F4A952638D711000F3418 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F4A942638D711000F3418 /* MainView.swift */; };
 		0A664BFA261266EA00EFA8F5 /* SymbolCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A664BF9261266EA00EFA8F5 /* SymbolCategoryView.swift */; };
 		0AA450002615291A00C5E2A7 /* Purchases in Frameworks */ = {isa = PBXBuildFile; productRef = 0AA44FFF2615291A00C5E2A7 /* Purchases */; };
 		0AA450032615294D00C5E2A7 /* RRSettingsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0AA450022615294D00C5E2A7 /* RRSettingsKit */; };
 		0AA450042615294D00C5E2A7 /* RRSettingsKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 0AA450022615294D00C5E2A7 /* RRSettingsKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0AA4500626152AB300C5E2A7 /* IAPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4500526152AB300C5E2A7 /* IAPView.swift */; };
 		0AB5FD742444F1BF005DBD66 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5FD732444F1BF005DBD66 /* Color.swift */; };
-		0AC1BB5A261222260017CD43 /* MainSymbolGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC1BB59261222260017CD43 /* MainSymbolGameViewModel.swift */; };
 		0AC1BB60261223370017CD43 /* RRComponentsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0AC1BB5F261223370017CD43 /* RRComponentsKit */; };
 		0AC1BB61261223370017CD43 /* RRComponentsKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 0AC1BB5F261223370017CD43 /* RRComponentsKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0AC1BBDA26122A580017CD43 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC1BB9D26122A580017CD43 /* Poppins-ExtraLight.ttf */; };
@@ -50,7 +51,8 @@
 		0ACE98B924432DC6006F9A12 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98B824432DC6006F9A12 /* Symbols.swift */; };
 		0ACE98BB24432FE4006F9A12 /* SymbolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98BA24432FE4006F9A12 /* SymbolRow.swift */; };
 		0ACE98BE24433996006F9A12 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98BD24433996006F9A12 /* View.swift */; };
-		557AB15525C806C900CF5284 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557AB15425C806C900CF5284 /* HapticFeedback.swift */; };
+		0AE4F67426595F3B007F24C7 /* LikeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4F67326595F3B007F24C7 /* LikeButtonView.swift */; };
+		557AB15525C806C900CF5284 /* FeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557AB15425C806C900CF5284 /* FeedbackManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,14 +75,15 @@
 		0A01CD422445843100800E7D /* MainSymbolGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSymbolGameView.swift; sourceTree = "<group>"; };
 		0A02DF4426122D1D00D0B356 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0A02DF482612306D00D0B356 /* SymbolsViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsViewerView.swift; sourceTree = "<group>"; };
-		0A02DF4A2612350800D0B356 /* SymbolsViewerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsViewerViewModel.swift; sourceTree = "<group>"; };
 		0A02DF4C261235AF00D0B356 /* SymbolCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCategories.swift; sourceTree = "<group>"; };
+		0A3F4A902638D543000F3418 /* MainSymbolGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainSymbolGameViewModel.swift; path = "SF Symbols Game/View Models/MainSymbolGameViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		0A3F4A912638D543000F3418 /* SymbolsViewerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SymbolsViewerViewModel.swift; path = "SF Symbols Game/View Models/SymbolsViewerViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		0A3F4A942638D711000F3418 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0A664BF9261266EA00EFA8F5 /* SymbolCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCategoryView.swift; sourceTree = "<group>"; };
 		0AA4500526152AB300C5E2A7 /* IAPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPView.swift; sourceTree = "<group>"; };
 		0AB5FD732444F1BF005DBD66 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		0AC1BB54261217D20017CD43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "SF Symbols Game/Info.plist"; sourceTree = "<group>"; };
 		0AC1BB55261217E30017CD43 /* SF Symbols Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "SF Symbols Game.entitlements"; path = "SF Symbols Game/SF Symbols Game.entitlements"; sourceTree = "<group>"; };
-		0AC1BB59261222260017CD43 /* MainSymbolGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSymbolGameViewModel.swift; sourceTree = "<group>"; };
 		0AC1BB63261225BF0017CD43 /* SFSymbolsFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsFinder.swift; sourceTree = "<group>"; };
 		0AC1BB9D26122A580017CD43 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		0AC1BB9E26122A580017CD43 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
@@ -110,7 +113,8 @@
 		0ACE98B824432DC6006F9A12 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		0ACE98BA24432FE4006F9A12 /* SymbolRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolRow.swift; sourceTree = "<group>"; };
 		0ACE98BD24433996006F9A12 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		557AB15425C806C900CF5284 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
+		0AE4F67326595F3B007F24C7 /* LikeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButtonView.swift; sourceTree = "<group>"; };
+		557AB15425C806C900CF5284 /* FeedbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,7 @@
 		0AB5FD752444F23B005DBD66 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0AE4F67226595F28007F24C7 /* Helper Views */,
 				0A02DF462612305C00D0B356 /* Viewer View */,
 				0AB5FD762444F240005DBD66 /* Main View */,
 				0A02DF4326122D0700D0B356 /* Settings View */,
@@ -186,6 +191,7 @@
 				0A01CD422445843100800E7D /* MainSymbolGameView.swift */,
 				0ACE98BA24432FE4006F9A12 /* SymbolRow.swift */,
 				0A01CD412445843100800E7D /* BarButtonView.swift */,
+				0A3F4A942638D711000F3418 /* MainView.swift */,
 			);
 			path = "Main View";
 			sourceTree = "<group>";
@@ -193,8 +199,8 @@
 		0AC1BB58261222020017CD43 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				0AC1BB59261222260017CD43 /* MainSymbolGameViewModel.swift */,
-				0A02DF4A2612350800D0B356 /* SymbolsViewerViewModel.swift */,
+				0A3F4A902638D543000F3418 /* MainSymbolGameViewModel.swift */,
+				0A3F4A912638D543000F3418 /* SymbolsViewerViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -283,11 +289,19 @@
 			path = "SF Symbols Game/Extensions";
 			sourceTree = "<group>";
 		};
+		0AE4F67226595F28007F24C7 /* Helper Views */ = {
+			isa = PBXGroup;
+			children = (
+				0AE4F67326595F3B007F24C7 /* LikeButtonView.swift */,
+			);
+			path = "Helper Views";
+			sourceTree = "<group>";
+		};
 		557AB15325C806B700CF5284 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				0AC1BB6D26122A580017CD43 /* Fonts */,
-				557AB15425C806C900CF5284 /* HapticFeedback.swift */,
+				557AB15425C806C900CF5284 /* FeedbackManager.swift */,
 			);
 			name = Utilities;
 			path = "SF Symbols Game/Utilities";
@@ -395,21 +409,23 @@
 			files = (
 				0ACE98B924432DC6006F9A12 /* Symbols.swift in Sources */,
 				0A01CD442445843100800E7D /* MainSymbolGameView.swift in Sources */,
-				557AB15525C806C900CF5284 /* HapticFeedback.swift in Sources */,
+				0A3F4A932638D543000F3418 /* SymbolsViewerViewModel.swift in Sources */,
+				557AB15525C806C900CF5284 /* FeedbackManager.swift in Sources */,
 				0ACE98A224432BB1006F9A12 /* AppDelegate.swift in Sources */,
+				0A3F4A952638D711000F3418 /* MainView.swift in Sources */,
 				0A02DF4E2612390A00D0B356 /* SymbolCategories.swift in Sources */,
+				0AE4F67426595F3B007F24C7 /* LikeButtonView.swift in Sources */,
 				0ACE98A724432BB1006F9A12 /* Unofficial_SF_Symbols_Game.xcdatamodeld in Sources */,
 				0A01CD432445843100800E7D /* BarButtonView.swift in Sources */,
 				0A02DF4526122D1D00D0B356 /* SettingsView.swift in Sources */,
 				0AB5FD742444F1BF005DBD66 /* Color.swift in Sources */,
 				0ACE98BE24433996006F9A12 /* View.swift in Sources */,
-				0AC1BB5A261222260017CD43 /* MainSymbolGameViewModel.swift in Sources */,
 				0A02DF4F2612391700D0B356 /* SFSymbolsFinder.swift in Sources */,
+				0A3F4A922638D543000F3418 /* MainSymbolGameViewModel.swift in Sources */,
 				0ACE98BB24432FE4006F9A12 /* SymbolRow.swift in Sources */,
 				0AA4500626152AB300C5E2A7 /* IAPView.swift in Sources */,
 				0A664BFA261266EA00EFA8F5 /* SymbolCategoryView.swift in Sources */,
 				0ACE98A424432BB1006F9A12 /* SceneDelegate.swift in Sources */,
-				0A02DF4B2612350800D0B356 /* SymbolsViewerViewModel.swift in Sources */,
 				0A02DF492612306D00D0B356 /* SymbolsViewerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

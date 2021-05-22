@@ -12,56 +12,35 @@ import RRComponentsKit
 struct MainSymbolGameView: View {
     @EnvironmentObject var viewModel: MainSymbolGameViewModel
     @State private var activeSheet: MainViewActiveSheet?
-    @State private var selectedSymbol: Int? = nil
     
     var body: some View {
         VStack {
             HStack {
-                NavigationButton(imageName: "doc.text.viewfinder", label: "Viewer") {
-                    activeSheet = .viewer
-                }
-                
                 Spacer()
-                
-                NavigationButton(imageName: "gear", label: "Settings") {
-                    activeSheet = .settings
-                }
+                LikeButtonView(score: $viewModel.score)
+                    .frame(height: 50)
             }
-            .padding(.horizontal)
+            .padding([.top, .horizontal])
             
             Text("What is the name of this symbol?")
-                .font(weight: .bold, style: .largeTitle)
+                .font(weight: .bold, style: .title1)
                 .frame(maxWidth: .infinity, alignment: .center)
                 .multilineTextAlignment(.center)
-                .padding([.horizontal, .top])
+                .padding(.horizontal)
             
             Spacer()
             Image(systemName: viewModel.symbols[viewModel.correctAnswer]).customImage()
             Spacer()
             
             ForEach(MainSymbolGameViewModel.numberOfOptions, id: \.self) { symbol in
-                SymbolRow(selectedSymbol: $selectedSymbol, symbol: symbol)
+                SymbolRow(selectedSymbol: $viewModel.selectedSymbol, symbol: symbol)
                     .foregroundColor(.primary)
             }
             
-            GradientButton(title: "Evaluate") {
-                if let selectedSymbol = selectedSymbol {
-                    viewModel.symbolTapped(selectedSymbol)
-                    self.selectedSymbol = nil
-                }
+            GradientButton(title: viewModel.showResult ? "Next" : "Evaluate") {
+                viewModel.evaluate()
             }
             .padding([.horizontal, .bottom])
-        }
-        .alert(isPresented: $viewModel.showingScore) {
-            Alert(title: Text(viewModel.scoreTitle), message: Text("Your score is \(viewModel.score)"), dismissButton: .default(Text("Continue")) {
-                viewModel.askQuestion()
-            })
-        }
-        .sheet(item: $activeSheet) { sheet in
-            switch sheet {
-            case .viewer: SymbolsViewerView()
-            case .settings: SettingsView()
-            }
         }
     }
 }
@@ -72,11 +51,3 @@ struct MainSymbolGameView_Previews: PreviewProvider {
     }
 }
 
-enum MainViewActiveSheet: Identifiable {
-    case viewer
-    case settings
-    
-    var id: Int {
-        hashValue
-    }
-}

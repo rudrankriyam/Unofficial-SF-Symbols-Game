@@ -12,7 +12,7 @@ struct SymbolRow: View {
     @EnvironmentObject var viewModel: MainSymbolGameViewModel
     @Binding var selectedSymbol: Int?
     let symbol: Int
-
+    
     var body: some View {
         Button(action: { selectedSymbol = symbol }) {
             HStack(spacing: 10) {
@@ -20,6 +20,13 @@ struct SymbolRow: View {
                     .foregroundColor(symbol == selectedSymbol ? .white : .primary)
                     .kerning(1)
                     .font()
+                
+                Spacer()
+                
+                if viewModel.showResult {
+                    Image(systemName: viewModel.correctAnswer == symbol ? "checkmark" : "xmark")
+                        .foregroundColor(symbol == selectedSymbol ? .white : .primary)
+                }
             }
             .customBackground(isSelected: symbol == selectedSymbol)
         }

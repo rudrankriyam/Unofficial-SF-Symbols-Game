@@ -12,38 +12,47 @@ class MainSymbolGameViewModel: ObservableObject {
     // MARK:- Published Properties
     @Published var symbols = MainSymbolGameViewModel.getSymbolsArray()
     @Published var correctAnswer = Int.random(in: MainSymbolGameViewModel.numberOfOptions)
-
-    @Published var showingScore = false
-    @Published var scoreTitle = ""
+    
     @Published var score = 0
+    @Published var showResult = false
+    @Published var selectedSymbol: Int? = nil
 
     static let numberOfOptions: Range<Int> = 0..<4
-
+    
     // MARK:- Methods
-    func askQuestion() {
+    public func evaluate() {
+        guard let selectedSymbol = selectedSymbol else { return }
+        
+        showResult.toggle()
+        
+        if showResult {
+            symbolTapped(selectedSymbol)
+        } else {
+            self.selectedSymbol = nil
+            askQuestion()
+        }
+    }
+    
+    private func askQuestion() {
         symbols.shuffle()
         correctAnswer = Int.random(in: MainSymbolGameViewModel.numberOfOptions)
     }
-
-    func symbolTapped(_ number: Int) {
-        showingScore.toggle()
-        // Calling haptic feedback
-        haptickFeedback.feedback.haptiFeedback()
+    
+    private func symbolTapped(_ number: Int) {
+        FeedbackManager.success()
+        
         if number == correctAnswer {
-            scoreTitle = "Correct"
             score += 1
-        } else {
-            scoreTitle = "Wrong"
         }
     }
-
+    
     static func getSymbolsArray() -> [String] {
         var symbols: [String] = []
-
+        
         for symbol in All.allCases {
             symbols.append(symbol.systemName)
         }
-
+        
         return symbols.shuffled()
     }
 }
