@@ -14,30 +14,35 @@ class MainSymbolGameViewModel: ObservableObject {
     @Published var correctAnswer = Int.random(in: MainSymbolGameViewModel.numberOfOptions)
     
     @Published var score = 0
-    @Published var isEvaluated = false
-    
+    @Published var showResult = false
+    @Published var selectedSymbol: Int? = nil
+
     static let numberOfOptions: Range<Int> = 0..<4
     
     // MARK:- Methods
-    func askQuestion() {
-        symbols.shuffle()
-        correctAnswer = Int.random(in: MainSymbolGameViewModel.numberOfOptions)
+    public func evaluate() {
+        guard let selectedSymbol = selectedSymbol else { return }
         
-        isEvaluated.toggle()
+        showResult.toggle()
+        
+        if showResult {
+            symbolTapped(selectedSymbol)
+        } else {
+            self.selectedSymbol = nil
+            askQuestion()
+        }
     }
     
-    func symbolTapped(_ number: Int) {
-        // Calling haptic feedback
+    private func askQuestion() {
+        symbols.shuffle()
+        correctAnswer = Int.random(in: MainSymbolGameViewModel.numberOfOptions)
+    }
+    
+    private func symbolTapped(_ number: Int) {
         FeedbackManager.success()
         
         if number == correctAnswer {
             score += 1
-        }
-        
-        isEvaluated.toggle()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.askQuestion()
         }
     }
     

@@ -23,7 +23,7 @@ struct SymbolRow: View {
                 
                 Spacer()
                 
-                if viewModel.isEvaluated {
+                if viewModel.showResult {
                     Image(systemName: viewModel.correctAnswer == symbol ? "checkmark" : "xmark")
                         .foregroundColor(symbol == selectedSymbol ? .white : .primary)
                 }

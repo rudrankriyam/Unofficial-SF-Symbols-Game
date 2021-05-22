@@ -12,7 +12,6 @@ import RRComponentsKit
 struct MainSymbolGameView: View {
     @EnvironmentObject var viewModel: MainSymbolGameViewModel
     @State private var activeSheet: MainViewActiveSheet?
-    @State private var selectedSymbol: Int? = nil
     
     var body: some View {
         VStack {
@@ -34,18 +33,12 @@ struct MainSymbolGameView: View {
             Spacer()
             
             ForEach(MainSymbolGameViewModel.numberOfOptions, id: \.self) { symbol in
-                SymbolRow(selectedSymbol: $selectedSymbol, symbol: symbol)
+                SymbolRow(selectedSymbol: $viewModel.selectedSymbol, symbol: symbol)
                     .foregroundColor(.primary)
             }
             
-            GradientButton(title: "Evaluate") {
-                if let selectedSymbol = selectedSymbol {
-                    viewModel.symbolTapped(selectedSymbol)
-                    
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                        self.selectedSymbol = nil
-                    }
-                }
+            GradientButton(title: viewModel.showResult ? "Next" : "Evaluate") {
+                viewModel.evaluate()
             }
             .padding([.horizontal, .bottom])
         }

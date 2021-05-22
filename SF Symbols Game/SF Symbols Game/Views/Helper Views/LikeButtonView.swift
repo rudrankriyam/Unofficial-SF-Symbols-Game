@@ -16,9 +16,12 @@ struct LikeButtonView: View {
     
     var body: some View {
         HStack {
-            Text("\(score)").foregroundColor(.red).bold()
+            Text("Score: \(score)")
+                .font(weight: .bold, style: .callout)
+                .foregroundColor(.red)
                 .animation(.none)
-                .frame(width: 30)
+                .frame(minWidth: 50)
+            
             ZStack {
                 Image(systemName: "heart.fill")
                     .foregroundColor(.red)
