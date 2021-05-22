@@ -11,7 +11,7 @@ import RRComponentsKit
 
 enum MainViewActiveSheet: Identifiable, CaseIterable {
     case arcade
-    case death
+    case challenge
     case casual
     case viewer
     case settings
@@ -20,7 +20,7 @@ enum MainViewActiveSheet: Identifiable, CaseIterable {
         hashValue
     }
 }
-
+  
 struct MainView: View {
     @State private var activeSheet: MainViewActiveSheet?
     
@@ -37,7 +37,7 @@ struct MainView: View {
                         activeSheet = .arcade
                     }
                     MainViewGridItem(image: "⏳", mode: "challenge") {
-                        activeSheet = .death
+                        activeSheet = .challenge
                     }
                 }
                 .padding()
@@ -64,7 +64,7 @@ struct MainView: View {
             switch sheet {
             case .viewer: SymbolsViewerView()
             case .settings: SettingsView()
-            case .death, .casual, .arcade: MainSymbolGameView().environmentObject(MainSymbolGameViewModel())
+            case .challenge, .casual, .arcade: MainSymbolGameView().environmentObject(MainSymbolGameViewModel())
             }
         }
     }
