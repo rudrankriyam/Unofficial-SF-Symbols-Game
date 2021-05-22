@@ -52,7 +52,7 @@
 		0ACE98BB24432FE4006F9A12 /* SymbolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98BA24432FE4006F9A12 /* SymbolRow.swift */; };
 		0ACE98BE24433996006F9A12 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98BD24433996006F9A12 /* View.swift */; };
 		0AE4F67426595F3B007F24C7 /* LikeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4F67326595F3B007F24C7 /* LikeButtonView.swift */; };
-		557AB15525C806C900CF5284 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557AB15425C806C900CF5284 /* HapticFeedback.swift */; };
+		557AB15525C806C900CF5284 /* FeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557AB15425C806C900CF5284 /* FeedbackManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -114,7 +114,7 @@
 		0ACE98BA24432FE4006F9A12 /* SymbolRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolRow.swift; sourceTree = "<group>"; };
 		0ACE98BD24433996006F9A12 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		0AE4F67326595F3B007F24C7 /* LikeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButtonView.swift; sourceTree = "<group>"; };
-		557AB15425C806C900CF5284 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
+		557AB15425C806C900CF5284 /* FeedbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,7 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				0AC1BB6D26122A580017CD43 /* Fonts */,
-				557AB15425C806C900CF5284 /* HapticFeedback.swift */,
+				557AB15425C806C900CF5284 /* FeedbackManager.swift */,
 			);
 			name = Utilities;
 			path = "SF Symbols Game/Utilities";
@@ -410,7 +410,7 @@
 				0ACE98B924432DC6006F9A12 /* Symbols.swift in Sources */,
 				0A01CD442445843100800E7D /* MainSymbolGameView.swift in Sources */,
 				0A3F4A932638D543000F3418 /* SymbolsViewerViewModel.swift in Sources */,
-				557AB15525C806C900CF5284 /* HapticFeedback.swift in Sources */,
+				557AB15525C806C900CF5284 /* FeedbackManager.swift in Sources */,
 				0ACE98A224432BB1006F9A12 /* AppDelegate.swift in Sources */,
 				0A3F4A952638D711000F3418 /* MainView.swift in Sources */,
 				0A02DF4E2612390A00D0B356 /* SymbolCategories.swift in Sources */,

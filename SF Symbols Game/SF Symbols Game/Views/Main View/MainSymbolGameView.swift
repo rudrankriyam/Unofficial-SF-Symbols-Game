@@ -16,12 +16,18 @@ struct MainSymbolGameView: View {
     
     var body: some View {
         VStack {
-
+            HStack {
+                Spacer()
+                LikeButtonView(score: $viewModel.score)
+                    .frame(height: 50)
+            }
+            .padding([.top, .horizontal])
+            
             Text("What is the name of this symbol?")
-                .font(weight: .bold, style: .largeTitle)
+                .font(weight: .bold, style: .title1)
                 .frame(maxWidth: .infinity, alignment: .center)
                 .multilineTextAlignment(.center)
-                .padding([.horizontal, .top])
+                .padding(.horizontal)
             
             Spacer()
             Image(systemName: viewModel.symbols[viewModel.correctAnswer]).customImage()
@@ -35,15 +41,13 @@ struct MainSymbolGameView: View {
             GradientButton(title: "Evaluate") {
                 if let selectedSymbol = selectedSymbol {
                     viewModel.symbolTapped(selectedSymbol)
-                    self.selectedSymbol = nil
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                        self.selectedSymbol = nil
+                    }
                 }
             }
             .padding([.horizontal, .bottom])
-        }
-        .alert(isPresented: $viewModel.showingScore) {
-            Alert(title: Text(viewModel.scoreTitle), message: Text("Your score is \(viewModel.score)"), dismissButton: .default(Text("Continue")) {
-                viewModel.askQuestion()
-            })
         }
     }
 }
