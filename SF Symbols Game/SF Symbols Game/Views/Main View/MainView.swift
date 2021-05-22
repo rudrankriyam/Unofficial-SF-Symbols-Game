@@ -20,13 +20,13 @@ enum MainViewActiveSheet: Identifiable, CaseIterable {
         hashValue
     }
 }
-  
+
 struct MainView: View {
     @State private var activeSheet: MainViewActiveSheet?
     
     var body: some View {
         VStack {
-              Text("SF Symbols Game")
+            Text("SF Symbols Game")
                 .largeTitleText()
             
             Spacer()
@@ -54,17 +54,19 @@ struct MainView: View {
             }
             
             Spacer()
-                    
-          NavigationButton(imageName: "gear", label: "Settings") {
-              activeSheet = .settings
-          }
+            
+            NavigationButton(imageName: "gear", label: "Settings") {
+                activeSheet = .settings
+            }
         }
         .padding(.horizontal)
         .sheet(item: $activeSheet) { sheet in
             switch sheet {
             case .viewer: SymbolsViewerView()
             case .settings: SettingsView()
-            case .challenge, .casual, .arcade: MainSymbolGameView().environmentObject(MainSymbolGameViewModel())
+            case .challenge: MainSymbolGameView().environmentObject(MainSymbolGameViewModel())
+            case .casual: MainSymbolGameView().environmentObject(MainSymbolGameViewModel())
+            case .arcade: MainSymbolGameView().environmentObject(MainSymbolGameViewModel())
             }
         }
     }
