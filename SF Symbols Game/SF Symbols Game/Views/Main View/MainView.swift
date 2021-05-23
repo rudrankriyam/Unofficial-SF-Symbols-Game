@@ -23,11 +23,11 @@ enum MainViewActiveSheet: Identifiable, CaseIterable {
 
 struct MainView: View {
     @State private var activeSheet: MainViewActiveSheet?
+    @StateObject private var viewModel = MainSymbolGameViewModel()
     
     var body: some View {
         VStack {
-            Text("SF Symbols Game")
-                .largeTitleText()
+            Text("SF Symbols Game").largeTitleText()
             
             Spacer()
             
@@ -64,9 +64,9 @@ struct MainView: View {
             switch sheet {
             case .viewer: SymbolsViewerView()
             case .settings: SettingsView()
-            case .challenge: MainSymbolGameView().environmentObject(MainSymbolGameViewModel())
-            case .casual: MainSymbolGameView().environmentObject(MainSymbolGameViewModel())
-            case .arcade: MainSymbolGameView().environmentObject(MainSymbolGameViewModel())
+            case .challenge: ChallengeGameView().environmentObject(viewModel)
+            case .casual: CasualGameView().environmentObject(viewModel)
+            case .arcade: CasualGameView().environmentObject(viewModel)
             }
         }
     }
@@ -75,26 +75,5 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
-    }
-}
-
-struct MainViewGridItem: View {
-    var image: String
-    var mode: String
-    var action: () -> Void
-    
-    var body: some View {
-        Button(action: action) {
-            VStack {
-                Text(image)
-                    .font(style: .largeTitle)
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    .customBackground()
-                
-                Text(mode.capitalized)
-                    .font()
-            }
-        }
-        .buttonStyle(PlainButtonStyle())
     }
 }

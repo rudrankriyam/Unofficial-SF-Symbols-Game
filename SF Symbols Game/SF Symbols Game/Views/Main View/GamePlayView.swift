@@ -1,27 +1,18 @@
 //
-//  MainSymbolGameView.swift
-//  Unofficial SF Symbols Game
+//  GamePlayView.swift
+//  SF Symbols Game
 //
-//  Created by Rudrank Riyam on 12/04/20.
-//  Copyright © 2020 Rudrank Riyam. All rights reserved.
+//  Created by Rudrank Riyam on 23/05/21.
+//  Copyright © 2021 Rudrank Riyam. All rights reserved.
 //
 
 import SwiftUI
-import RRComponentsKit
 
-struct MainSymbolGameView: View {
+struct GamePlayView: View {
     @EnvironmentObject var viewModel: MainSymbolGameViewModel
-    @State private var activeSheet: MainViewActiveSheet?
     
     var body: some View {
         VStack {
-            HStack {
-                Spacer()
-                LikeButtonView(score: $viewModel.score)
-                    .frame(height: 50)
-            }
-            .padding([.top, .horizontal])
-            
             Text("What is the name of this symbol?")
                 .font(weight: .bold, style: .title1)
                 .frame(maxWidth: .infinity, alignment: .center)
@@ -29,7 +20,10 @@ struct MainSymbolGameView: View {
                 .padding(.horizontal)
             
             Spacer()
-            Image(systemName: viewModel.symbols[viewModel.correctAnswer]).customImage()
+            
+            Image(systemName: viewModel.symbols[viewModel.correctAnswer])
+                .customImage()
+            
             Spacer()
             
             ForEach(MainSymbolGameViewModel.numberOfOptions, id: \.self) { symbol in
@@ -40,14 +34,14 @@ struct MainSymbolGameView: View {
             GradientButton(title: viewModel.showResult ? "Next" : "Evaluate") {
                 viewModel.evaluate()
             }
-            .padding([.horizontal, .bottom])
         }
+        .padding([.horizontal, .bottom])
     }
 }
 
-struct MainSymbolGameView_Previews: PreviewProvider {
+
+struct GamePlayView_Previews: PreviewProvider {
     static var previews: some View {
-        MainSymbolGameView()
+        GamePlayView()
     }
 }
-
