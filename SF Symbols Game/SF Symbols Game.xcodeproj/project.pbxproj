@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A01CD432445843100800E7D /* BarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01CD412445843100800E7D /* BarButtonView.swift */; };
-		0A01CD442445843100800E7D /* MainSymbolGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01CD422445843100800E7D /* MainSymbolGameView.swift */; };
+		0A01CD442445843100800E7D /* CasualGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01CD422445843100800E7D /* CasualGameView.swift */; };
 		0A02DF4526122D1D00D0B356 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02DF4426122D1D00D0B356 /* SettingsView.swift */; };
 		0A02DF492612306D00D0B356 /* SymbolsViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02DF482612306D00D0B356 /* SymbolsViewerView.swift */; };
 		0A02DF4E2612390A00D0B356 /* SymbolCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02DF4C261235AF00D0B356 /* SymbolCategories.swift */; };
@@ -51,6 +51,10 @@
 		0ACE98B924432DC6006F9A12 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98B824432DC6006F9A12 /* Symbols.swift */; };
 		0ACE98BB24432FE4006F9A12 /* SymbolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98BA24432FE4006F9A12 /* SymbolRow.swift */; };
 		0ACE98BE24433996006F9A12 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE98BD24433996006F9A12 /* View.swift */; };
+		0AD3935D2659AEAD00D39E16 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3935C2659AEAD00D39E16 /* ProgressBarView.swift */; };
+		0AD3935F2659E02800D39E16 /* ChallengeGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3935E2659E02800D39E16 /* ChallengeGameView.swift */; };
+		0AD393612659E0A300D39E16 /* GamePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD393602659E0A300D39E16 /* GamePlayView.swift */; };
+		0AD393632659E11000D39E16 /* MainViewGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD393622659E11000D39E16 /* MainViewGridItem.swift */; };
 		0AE4F67426595F3B007F24C7 /* LikeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4F67326595F3B007F24C7 /* LikeButtonView.swift */; };
 		557AB15525C806C900CF5284 /* FeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557AB15425C806C900CF5284 /* FeedbackManager.swift */; };
 /* End PBXBuildFile section */
@@ -72,7 +76,7 @@
 
 /* Begin PBXFileReference section */
 		0A01CD412445843100800E7D /* BarButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonView.swift; sourceTree = "<group>"; };
-		0A01CD422445843100800E7D /* MainSymbolGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSymbolGameView.swift; sourceTree = "<group>"; };
+		0A01CD422445843100800E7D /* CasualGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CasualGameView.swift; sourceTree = "<group>"; };
 		0A02DF4426122D1D00D0B356 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0A02DF482612306D00D0B356 /* SymbolsViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsViewerView.swift; sourceTree = "<group>"; };
 		0A02DF4C261235AF00D0B356 /* SymbolCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCategories.swift; sourceTree = "<group>"; };
@@ -113,6 +117,10 @@
 		0ACE98B824432DC6006F9A12 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		0ACE98BA24432FE4006F9A12 /* SymbolRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolRow.swift; sourceTree = "<group>"; };
 		0ACE98BD24433996006F9A12 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		0AD3935C2659AEAD00D39E16 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		0AD3935E2659E02800D39E16 /* ChallengeGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeGameView.swift; sourceTree = "<group>"; };
+		0AD393602659E0A300D39E16 /* GamePlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayView.swift; sourceTree = "<group>"; };
+		0AD393622659E11000D39E16 /* MainViewGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewGridItem.swift; sourceTree = "<group>"; };
 		0AE4F67326595F3B007F24C7 /* LikeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButtonView.swift; sourceTree = "<group>"; };
 		557AB15425C806C900CF5284 /* FeedbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,7 +196,9 @@
 		0AB5FD762444F240005DBD66 /* Main View */ = {
 			isa = PBXGroup;
 			children = (
-				0A01CD422445843100800E7D /* MainSymbolGameView.swift */,
+				0A01CD422445843100800E7D /* CasualGameView.swift */,
+				0AD3935E2659E02800D39E16 /* ChallengeGameView.swift */,
+				0AD393602659E0A300D39E16 /* GamePlayView.swift */,
 				0ACE98BA24432FE4006F9A12 /* SymbolRow.swift */,
 				0A01CD412445843100800E7D /* BarButtonView.swift */,
 				0A3F4A942638D711000F3418 /* MainView.swift */,
@@ -293,6 +303,8 @@
 			isa = PBXGroup;
 			children = (
 				0AE4F67326595F3B007F24C7 /* LikeButtonView.swift */,
+				0AD393622659E11000D39E16 /* MainViewGridItem.swift */,
+				0AD3935C2659AEAD00D39E16 /* ProgressBarView.swift */,
 			);
 			path = "Helper Views";
 			sourceTree = "<group>";
@@ -408,7 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ACE98B924432DC6006F9A12 /* Symbols.swift in Sources */,
-				0A01CD442445843100800E7D /* MainSymbolGameView.swift in Sources */,
+				0A01CD442445843100800E7D /* CasualGameView.swift in Sources */,
 				0A3F4A932638D543000F3418 /* SymbolsViewerViewModel.swift in Sources */,
 				557AB15525C806C900CF5284 /* FeedbackManager.swift in Sources */,
 				0ACE98A224432BB1006F9A12 /* AppDelegate.swift in Sources */,
@@ -417,15 +429,19 @@
 				0AE4F67426595F3B007F24C7 /* LikeButtonView.swift in Sources */,
 				0ACE98A724432BB1006F9A12 /* Unofficial_SF_Symbols_Game.xcdatamodeld in Sources */,
 				0A01CD432445843100800E7D /* BarButtonView.swift in Sources */,
+				0AD3935F2659E02800D39E16 /* ChallengeGameView.swift in Sources */,
 				0A02DF4526122D1D00D0B356 /* SettingsView.swift in Sources */,
 				0AB5FD742444F1BF005DBD66 /* Color.swift in Sources */,
 				0ACE98BE24433996006F9A12 /* View.swift in Sources */,
+				0AD393632659E11000D39E16 /* MainViewGridItem.swift in Sources */,
+				0AD3935D2659AEAD00D39E16 /* ProgressBarView.swift in Sources */,
 				0A02DF4F2612391700D0B356 /* SFSymbolsFinder.swift in Sources */,
 				0A3F4A922638D543000F3418 /* MainSymbolGameViewModel.swift in Sources */,
 				0ACE98BB24432FE4006F9A12 /* SymbolRow.swift in Sources */,
 				0AA4500626152AB300C5E2A7 /* IAPView.swift in Sources */,
 				0A664BFA261266EA00EFA8F5 /* SymbolCategoryView.swift in Sources */,
 				0ACE98A424432BB1006F9A12 /* SceneDelegate.swift in Sources */,
+				0AD393612659E0A300D39E16 /* GamePlayView.swift in Sources */,
 				0A02DF492612306D00D0B356 /* SymbolsViewerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

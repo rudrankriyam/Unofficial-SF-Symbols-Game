@@ -19,7 +19,7 @@ struct IAPView: View {
                 .padding(.horizontal)
 
             VStack(alignment: .leading) {
-                Text("If you love the game, you can leave a tip to cover development cost! Any tip at all helps a lot!")
+                Text("If you love the game, you can leave a tip to cover development cost! Any tip helps a lot!")
                     .font(weight: .semiBold)
             }
             .padding()

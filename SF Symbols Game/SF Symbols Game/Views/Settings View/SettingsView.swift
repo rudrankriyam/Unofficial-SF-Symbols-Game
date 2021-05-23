@@ -11,6 +11,8 @@ import MessageUI
 import RRSettingsKit
 import RRComponentsKit
 
+// NOTE:- This code is messy. I know. Will fix it later.
+
 struct SettingsView: View {
     let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
     @State var bugResult: Result<MFMailComposeResult, Error>? = nil
