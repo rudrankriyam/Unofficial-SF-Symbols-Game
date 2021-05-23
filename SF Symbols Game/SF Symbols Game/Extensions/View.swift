@@ -22,7 +22,6 @@ extension View {
                 .stroke(gradient, lineWidth: 2))
             .background(isSelected ? RoundedRectangle(cornerRadius: 12)
                 .fill(gradient) : nil)
-            .padding(.horizontal)
             .padding(.bottom, 4)
     }
 

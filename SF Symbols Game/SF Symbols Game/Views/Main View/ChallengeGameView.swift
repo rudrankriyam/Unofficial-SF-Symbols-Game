@@ -18,7 +18,7 @@ struct ChallengeGameView: View {
     var body: some View {
         VStack {
             HStack(alignment: .firstTextBaseline) {
-                Text("Time: \(20 - Int(elapsedTime * 20))")
+                Text("Time: \(20 - Int(elapsedTime * 20))s left")
                     .font(weight: .bold, style: .callout)
                     .foregroundColor(.secondary)
                 
@@ -26,21 +26,28 @@ struct ChallengeGameView: View {
                 
                 LikeButtonView(score: $viewModel.score)
             }
-            .frame(height: 50)
             .padding([.top, .horizontal])
+            .frame(height: 40)
             
             ProgressBarView(value: $elapsedTime)
-                .frame(height: 20)
+                .frame(height: 10)
                 .padding(.horizontal)
-                
+            
             GamePlayView()
-            .onReceive(timer) { _ in
-                if elapsedTime < 1 {
-                    elapsedTime += 0.005
-                } else {
-                    timer.upstream.connect().cancel()
-                }
-            }
+        }
+        .padding(.bottom)
+        .background(Color.traitsBackground)
+        .edgesIgnoringSafeArea(.all)
+        .onReceive(timer) { _ in
+            updateTime()
+        }
+    }
+    
+    private func updateTime() {
+        if elapsedTime < 1 {
+            elapsedTime += 0.005
+        } else {
+            timer.upstream.connect().cancel()
         }
     }
 }

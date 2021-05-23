@@ -24,6 +24,9 @@ struct CasualGameView: View {
             
             GamePlayView()
         }
+        .padding(.bottom)
+        .background(Color.traitsBackground)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

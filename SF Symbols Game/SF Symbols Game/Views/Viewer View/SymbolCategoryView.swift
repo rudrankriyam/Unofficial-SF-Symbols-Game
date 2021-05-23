@@ -10,23 +10,20 @@ import SwiftUI
 
 struct SymbolCategoryView: View {
     var category: SymbolCategories
-
+    
     var body: some View {
         VStack {
-            Text(category.name)
-                .largeTitleText()
-                .padding(.horizontal)
-
+            Text(category.name).largeTitleText()
+            
             ScrollView(.vertical, showsIndicators: false) {
                 LazyVStack {
                     ForEach(category.symbols, id: \.self) { symbol in
-                        Label(symbol, systemImage: symbol)
-                            .font()
-                            .customBackground()
+                        SymbolLabelView(image: symbol, name: symbol)
                     }
                 }
             }
-            .navigationBarTitleDisplayMode(.inline)
         }
+        .padding(.horizontal)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }

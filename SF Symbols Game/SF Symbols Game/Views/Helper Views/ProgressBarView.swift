@@ -24,7 +24,7 @@ struct ProgressBarView: View {
                     .animation(.linear)
             }
             .foregroundColor(.brandPink)
-            .cornerRadius(24)
+            .cornerRadius(12)
         }
     }
 }

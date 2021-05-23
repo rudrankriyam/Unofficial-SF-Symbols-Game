@@ -14,21 +14,19 @@ struct SymbolsViewerView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Viewer")
-                    .largeTitleText()
-                    .padding(.horizontal)
-
+                Text("Viewer").largeTitleText()
+                
                 ScrollView(.vertical, showsIndicators: false) {
                     LazyVStack {
                         ForEach(SymbolCategories.allCases, id: \.self) { symbol in
                             NavigationLink(destination: SymbolCategoryView(category: symbol)) {
-                            Label(symbol.name, systemImage: symbol.image).font()
-                                .customBackground()
+                                SymbolLabelView(image: symbol.image, name: symbol.name)
                             }
                         }
                     }
                 }
             }
+            .padding(.horizontal)
             .navigationBarHidden(true)
         }
     }
@@ -39,4 +37,3 @@ struct SymbolsViewerView_Previews: PreviewProvider {
         SymbolsViewerView()
     }
 }
-

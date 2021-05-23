@@ -16,6 +16,7 @@
 		0A3F4A922638D543000F3418 /* MainSymbolGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F4A902638D543000F3418 /* MainSymbolGameViewModel.swift */; };
 		0A3F4A932638D543000F3418 /* SymbolsViewerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F4A912638D543000F3418 /* SymbolsViewerViewModel.swift */; };
 		0A3F4A952638D711000F3418 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F4A942638D711000F3418 /* MainView.swift */; };
+		0A65ACD7265A7E1700258FC6 /* SymbolLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A65ACD6265A7E1700258FC6 /* SymbolLabelView.swift */; };
 		0A664BFA261266EA00EFA8F5 /* SymbolCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A664BF9261266EA00EFA8F5 /* SymbolCategoryView.swift */; };
 		0AA450002615291A00C5E2A7 /* Purchases in Frameworks */ = {isa = PBXBuildFile; productRef = 0AA44FFF2615291A00C5E2A7 /* Purchases */; };
 		0AA450032615294D00C5E2A7 /* RRSettingsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0AA450022615294D00C5E2A7 /* RRSettingsKit */; };
@@ -83,6 +84,7 @@
 		0A3F4A902638D543000F3418 /* MainSymbolGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainSymbolGameViewModel.swift; path = "SF Symbols Game/View Models/MainSymbolGameViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		0A3F4A912638D543000F3418 /* SymbolsViewerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SymbolsViewerViewModel.swift; path = "SF Symbols Game/View Models/SymbolsViewerViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		0A3F4A942638D711000F3418 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0A65ACD6265A7E1700258FC6 /* SymbolLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolLabelView.swift; sourceTree = "<group>"; };
 		0A664BF9261266EA00EFA8F5 /* SymbolCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCategoryView.swift; sourceTree = "<group>"; };
 		0AA4500526152AB300C5E2A7 /* IAPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPView.swift; sourceTree = "<group>"; };
 		0AB5FD732444F1BF005DBD66 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			children = (
 				0A02DF482612306D00D0B356 /* SymbolsViewerView.swift */,
 				0A664BF9261266EA00EFA8F5 /* SymbolCategoryView.swift */,
+				0A65ACD6265A7E1700258FC6 /* SymbolLabelView.swift */,
 			);
 			path = "Viewer View";
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				0AD3935D2659AEAD00D39E16 /* ProgressBarView.swift in Sources */,
 				0A02DF4F2612391700D0B356 /* SFSymbolsFinder.swift in Sources */,
 				0A3F4A922638D543000F3418 /* MainSymbolGameViewModel.swift in Sources */,
+				0A65ACD7265A7E1700258FC6 /* SymbolLabelView.swift in Sources */,
 				0ACE98BB24432FE4006F9A12 /* SymbolRow.swift in Sources */,
 				0AA4500626152AB300C5E2A7 /* IAPView.swift in Sources */,
 				0A664BFA261266EA00EFA8F5 /* SymbolCategoryView.swift in Sources */,

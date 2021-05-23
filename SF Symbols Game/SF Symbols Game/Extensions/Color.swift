@@ -19,5 +19,5 @@ public extension Color {
 
     static var brandPurple: Color {
         Color(red: 112/255, green: 60/255, blue: 131/255)
-    }
+    }    
 }
